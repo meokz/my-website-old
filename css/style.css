@@ -1,0 +1,16 @@
+header.jumbotron {
+    background: url("../img/main5.png");
+    background-position: center 60%;
+    background-size: cover;
+
+    color: #ffffff;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+header .container {
+  margin: 10%;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
