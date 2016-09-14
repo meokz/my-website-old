@@ -1,5 +1,5 @@
 header.jumbotron {
-    background: url("../img/main5.png");
+    background: url("../img/jumbotron.jpg");
     background-position: center 60%;
     background-size: cover;
 
@@ -8,9 +8,15 @@ header.jumbotron {
 }
 
 header .container {
-  margin: 10%;
+	margin: 10%;
 }
 
 .navbar {
     margin-bottom: 0;
+}
+
+.row-thumbnail {
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 1%;
 }
