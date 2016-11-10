@@ -1,28 +1,39 @@
-.container {
-    background: #FFFFFF;
-    margin-bottom: 15px;
+/* Override Bootstrap */
+
+
+/* My CSS */
+.work_img {
+    padding: 5px;
 }
 
-.works_img {
-    padding: 10px;
+.work_caption {
+    margin-bottom: 50px;
 }
 
-.works_detail {
-    padding: 10px;
-}
-
-.works_detail h3 {
-    padding-bottom: 10px;
+.work_caption h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #3F4F51;
+    margin: 0;
+    padding: 10px 0 10px;
     border-bottom: solid 1px #E0E0E0;
 }
 
-.works_detail p {
-    color: #7F7F7F;
+.work_caption h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 10px 0 10px;
+    border-bottom: solid 1px #E0E0E0;
 }
 
-.works_discription {
+.work_caption p {
+    font-size: 16px;
+    color: #4A4A4A;
+    margin: 0;
     padding: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 .reset {
