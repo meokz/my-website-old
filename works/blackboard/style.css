@@ -28,16 +28,14 @@
     border-bottom: solid 1px #E0E0E0;
 }
 
+.work_caption h3 span {
+    margin-right: 10px;
+}
+
 .work_caption p {
     font-size: 16px;
     color: #4A4A4A;
     margin: 0;
     padding: 5px;
     margin-bottom: 5px;
-}
-
-.reset {
-	font-family: "Open Sans","Helvetica Neue",
-	Helvetica,Arial,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3",
-	"Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
