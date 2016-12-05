@@ -1,6 +1,6 @@
 #github.io
 
-<meo-cs.net>
+meo-cs.net
 
 # デプロイ
 
