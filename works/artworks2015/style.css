@@ -1,0 +1,17 @@
+.work_caption {
+	padding: 0 30px 0 30px;
+	margin: 10px 0 10px 0;
+	border: solid 1px #E0E0E0;
+}
+
+.work_caption h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #4A4A4A;
+    padding: 10px 0 10px;
+    border-bottom: solid 1px #E0E0E0;
+}
+
+.work_caption p span {
+    margin-right: 10px;
+}
