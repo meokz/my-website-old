@@ -1,0 +1,25 @@
+{
+  "name": "meokz.github.io",
+  "version": "1.0.0",
+  "description": "<meo-cs.net>",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^2.2.1",
+    "gulp-plumber": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meokz/meokz.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meokz/meokz.github.io/issues"
+  },
+  "homepage": "https://github.com/meokz/meokz.github.io#readme"
+}
