@@ -2,6 +2,9 @@
 see [meo-cs.net](http://meo-cs.net)
 
 ## usage
+* 起動
+`gulp server`
+
 * コンパイル
 `gulp make`
 
