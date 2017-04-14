@@ -1,6 +1,9 @@
-.container {
-    background: #FFFFFF;
-    margin-bottom: 15px;
+/* Override Bootstrap */
+
+
+/* My CSS */
+.work_img {
+    padding: 5px;
 }
 
 .work_caption {
@@ -17,7 +20,7 @@
 }
 
 .work_caption h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     color: #4A4A4A;
     margin: 0;
