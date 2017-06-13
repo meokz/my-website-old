@@ -65,3 +65,4 @@ Thumbs.db
 # Ignore the Node Modules folder
 /node_modules
 /phantomas
+package-lock\.json
