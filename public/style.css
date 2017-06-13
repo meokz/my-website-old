@@ -16,6 +16,11 @@ header .container {
     margin-bottom: 0;
 }
 
+.section {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .row {
 	margin: 1%;
 }
@@ -23,10 +28,10 @@ header .container {
 .row h2 {
     color: #4A4A4A;
     font-size: 22px;
-    margin: 5px 15px 5px 15px;
+    margin: 5px 10px 5px 10px;
     padding-bottom: 10px;
     padding-left: 22px;
-    border-bottom: solid 1px #7E7E7E;
+    border-bottom: solid 1px #51A7F9;
 }
 
 .reset {
@@ -34,7 +39,7 @@ header .container {
 }
 /* My CSS */
 .work {
-    padding: 5px 0px 5px 0px;
+    padding: 5px;
 }
 
 .work_img {
