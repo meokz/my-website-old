@@ -17,7 +17,7 @@ header .container {
 }
 
 .row {
-	margin: 1%;
+	margin: 1% 0 1% 0;
 }
 
 .row h2 {

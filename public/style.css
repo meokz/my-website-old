@@ -16,18 +16,8 @@ header .container {
     margin-bottom: 0;
 }
 
-/*.section {
-    margin-left: 5%;
-    margin-right: 5%;
-}*/
-
-.container {
-    /*background: #FFFFFF;*/
-    /*margin-bottom: 15px;*/
-}
-
 .row {
-	margin: 1%;
+	margin: 1% 0 1% 0;
 }
 
 .row h2 {
