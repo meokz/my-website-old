@@ -17,18 +17,11 @@ h2 {
     border-bottom: solid 1px #D2D2D2;
 }
 
-h3 {
-    font-size: 22px;
-}
+h3 { font-size: 22px; }
 
-ul {
-    list-style:none;
-}
+ul { list-style:none; }
 
-.thumbnail {
-    border: none;
-}
-
+.thumbnail { border: none; }
 
 .link li{
     margin: 20px 10px 20px 10px;
@@ -59,7 +52,9 @@ li.github   { background-image:url("./img/github.png"); }
 .work:hover{
     border: solid 1px #51A7F9;
 }
+
 .work h3 { margin: 10px 0 10px 0; }
-.work a:hover   { color: #51A7F9; }
-.work a:active  { color: #51A7F9; }
+.work a {text-decoration: none; }
+.work a:hover   { color: #000000; }
+.work a:active  { color: #000000; }
 
