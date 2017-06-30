@@ -1,56 +1,64 @@
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
+@media (min-width:  768px) { .container { width: 750px; } }
+@media (min-width:  992px) { .container { width: 750px; } } 
+@media (min-width: 1200px) { .container { width: 750px; } }
 
-@media (min-width: 992px) { 
-    .container { 
-        width: 750px; 
-    } 
-} 
-
-@media (min-width: 1200px) { 
-    .container { 
-        width: 750px; 
-    } 
-}
+a:link    { color: #000000; }
+a:visited { color: #000000; }
+a:hover   { color: #ff0000; }
+a:active  { color: #ff8000; }
 
 .container {
     background: #FFFFFF;
-    margin-bottom: 15px;
 }
 
-.work_caption {
-    margin-bottom: 50px;
+h2 {
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    border-bottom: solid 1px #D2D2D2;
 }
 
-.work_caption h2 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #3F4F51;
-    margin: 0;
-    padding: 10px 0 10px;
-    border-bottom: solid 1px #E0E0E0;
+h3 {
+    font-size: 22px;
 }
 
-.work_caption h3 {
-    font-size: 20px;
-    font-weight: normal;
-    color: #4A4A4A;
-    margin: 0;
-    padding: 10px 0 10px;
-    border-bottom: solid 1px #E0E0E0;
+ul {
+    list-style:none;
 }
 
-.work_caption h3 span {
-    margin-right: 10px;
+.thumbnail {
+    border: none;
 }
 
-.work_caption p {
-    font-size: 16px;
-    color: #4A4A4A;
-    margin: 0;
+
+.link li{
+    margin: 20px 10px 20px 10px;
+    padding: 2px;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+
+li.mail     { background-image:url("./img/mail.png"); }
+li.blog     { background-image:url("./img/blog.png"); }
+li.twitter  { background-image:url("./img/twitter.png"); }
+li.facebook { background-image:url("./img/facebook.png"); }
+li.skype    { background-image:url("./img/skype.png"); }
+li.github   { background-image:url("./img/github.png"); }
+
+.link li > a{
+    padding-left: 40px;
+}
+
+.work {
+    margin: 10px 5px 10px 5px;
     padding: 5px;
-    margin-bottom: 5px;
+    border: solid 1px #E0E0E0;
+    cursor:pointer;
 }
+
+.work:hover{
+    border: solid 1px #51A7F9;
+}
+.work h3 { margin: 10px 0 10px 0; }
+.work a:hover   { color: #51A7F9; }
+.work a:active  { color: #51A7F9; }
