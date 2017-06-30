@@ -12,9 +12,15 @@ header .container {
 	margin: 10%;
 }
 
+@media (min-width: 992px) {
+    .container {
+        width: 750px;
+    }
+}
+
 @media (min-width: 1200px) { 
     .container { 
-        width: 960px; 
+        width: 750px; 
     } 
 }
 
@@ -28,7 +34,7 @@ header .container {
 
 .row h2 {
     color: #4A4A4A;
-    font-size: 22px;
+    font-size: 25px;
     margin: 5px 10px 5px 10px;
     padding-bottom: 10px;
     padding-left: 22px;
@@ -41,19 +47,28 @@ header .container {
 /* My CSS */
 .work {
     padding: 5px;
+    margin: 5px 0 10px;
+    background-color: #FFFFFF;
+    border: solid 1px #E0E0E0;
+    cursor:pointer;
+}
+
+.work:hover{
+    border: solid 1px #51A7F9;
 }
 
 .work_img {
     margin: 0;
+    border: none;
     overflow: hidden;
 }
 
 .work_img img {
-    -moz-transition: -moz-transform 0.5s ease-out;
-    -webkit-transition: -webkit-transform 0.5s ease-out;
-    -o-transition: -o-transform 0.5s ease-out;
-    -ms-transition: -ms-transform 0.5s ease-out;
-    transition: transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    -ms-transition: -ms-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
 .work_img img:hover {
@@ -65,7 +80,7 @@ header .container {
 }
 
 .work_caption{
-    padding: 1% 1% 1% 1%;
+    padding: 5px 5px 10px 5px;
 }
 
 .work_caption h2 {
@@ -73,7 +88,7 @@ header .container {
     font-weight: normal;
     color: #4A4A4A;
     margin: 0;
-    padding: 10px 0 10px;
+    padding: 10px 10px 10px;
     border-bottom: solid 1px #E0E0E0;
 }
 
@@ -82,7 +97,7 @@ header .container {
     color: #8F8F8F;
     margin: 0;
     padding-top: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .work_caption span {
