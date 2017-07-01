@@ -21,7 +21,11 @@ h3 { font-size: 22px; }
 
 ul { list-style:none; }
 
-.thumbnail { border: none; }
+
+.thumbnail { 
+    margin: 5px 0 5px;
+    border: none;
+}
 
 .link li{
     margin: 20px 10px 20px 10px;
@@ -54,7 +58,12 @@ li.github   { background-image:url("./img/github.png"); }
 }
 
 .work h3 { margin: 10px 0 10px 0; }
-.work a {text-decoration: none; }
-.work a:hover   { color: #000000; }
-.work a:active  { color: #000000; }
+
+.organization-table {
+    padding: 0px 15px 0px 15px;
+}
+
+.achievement h3 {
+    padding-left: 15px;
+}
 
