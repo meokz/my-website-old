@@ -59,6 +59,10 @@ li.github   { background-image:url("./img/github.png"); }
 
 .work h3 { margin: 10px 0 10px 0; }
 
+.reink {
+    font-size: 19px;
+}
+
 .organization-table {
     padding: 0px 15px 0px 15px;
 }
