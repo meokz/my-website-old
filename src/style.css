@@ -47,7 +47,6 @@ h2 {
     font-size: 22px;
     margin: 5px 0px 10px 0px;
     padding: 5px 0px 5px 0px;
-    /*border-bottom: solid 1px #E0E0E0;*/
 }
 
 .title a {
@@ -76,101 +75,13 @@ h2 {
     padding: 5px 0px 5px 0px;
     border-bottom: solid 1px #E0E0E0;
 }
-/*.work p {
-    margin: 0px;
-    padding: 5pxs;
-}
-*/
-/*.work ul {
-    margin: 0px;
-    padding: 0px;
+
+@media (min-width:  0px) {
+    .work_thumb h3 { font-size: 16px; }
+    .title a { font-size: 12px; }
 }
 
-.work li{
-    margin: 5px;
-    padding-left: 30px;
-    background-size:contain;
-    background-repeat:no-repeat;
-    color: #8F8F8F;
+@media (min-width:  768px) {
+    .work_thumb h3 { font-size: 22px; }
+    .title a { font-size: 14px; }
 }
-
-li.check { background-image:url("./img/check.png"); }
-li.user  { background-image:url("./img/user.png"); }
-li.time  { background-image:url("./img/time.png"); }*/
-
-
-/*.row {
-	margin: 1% 0 1% 0;
-}
-
-.row h2 {
-    color: #4A4A4A;
-    font-size: 25px;
-    margin: 5px 10px 5px 10px;
-    padding-bottom: 10px;
-    padding-left: 22px;
-    border-bottom: solid 1px #51A7F9;
-}
-*/
-/*.reset {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-}*/
-/* My CSS */
-/*.work {
-    padding: 5px;
-    margin: 5px 0 10px;
-    background-color: #FFFFFF;
-    border: solid 1px #E0E0E0;
-    cursor:pointer;
-}
-
-.work:hover{
-    border: solid 1px #51A7F9;
-}
-
-.work_img {
-    margin: 0;
-    border: none;
-    overflow: hidden;
-}
-
-.work_img img {
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    -ms-transition: -ms-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-}
-
-.work_img img:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.work_caption{
-    padding: 5px 5px 10px 5px;
-}
-
-.work_caption h2 {
-    font-size: 20px;
-    font-weight: normal;
-    color: #4A4A4A;
-    margin: 0;
-    padding: 10px 10px 10px;
-    border-bottom: solid 1px #E0E0E0;
-}
-
-.work_caption p {
-    font-size: 16px;
-    color: #8F8F8F;
-    margin: 0;
-    padding-top: 5px;
-    padding-left: 10px;
-}
-
-.work_caption span {
-    margin-right: 7px;
-}*/
