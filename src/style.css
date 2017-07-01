@@ -62,8 +62,8 @@ h2 {
 }
 
 .work_thumb {
-    margin: 15px 5px 15px 5px;
-    padding: 10px 20px 10px 20px;
+    margin: 10px 5px 10px 5px;
+    padding: 10px;
     border: solid 1px #E0E0E0;
     cursor:pointer;
 }
