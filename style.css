@@ -69,6 +69,14 @@ h2 {
 }
 .work_thumb:hover{ border: solid 1px #51A7F9; }
 
+.work_thumb_left {
+    padding-right: 5px;
+}
+
+.work_thumb_right {
+    padding-left: 5px;
+}
+
 .work_thumb h3 {
     font-size: 22px;
     margin: 5px 0px 10px 0px;
