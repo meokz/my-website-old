@@ -45,6 +45,14 @@ li.github   { background-image:url("./img/github.png"); }
     padding-left: 40px;
 }
 
+.pdf a {
+    color: #00A2FF;
+    margin: 5px;
+    padding:5px 10px 5px 10px;
+    border:1px solid #00A2FF;
+    border-radius:10px;
+}
+
 .work {
     margin: 10px 5px 10px 5px;
     padding: 5px;
