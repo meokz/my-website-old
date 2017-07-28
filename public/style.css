@@ -43,22 +43,17 @@ h2 {
 }
 .work:hover{ border: solid 1px #51A7F9; }
 
-.work h3 {
-    font-size: 22px;
+.work_title {
+    font-size: 18px;
     margin: 5px 0px 10px 0px;
     padding: 5px 0px 5px 0px;
 }
 
-.title a {
-    text-align:right;
+.work_info {
+    /*text-align:right;*/
     color: #4A4A4A;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     font-size: 14px;
-}
-
-.title a:hover{
-    color: #4A4A4A;
-    text-decoration:none;
 }
 
 .work_thumb {
