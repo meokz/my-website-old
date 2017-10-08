@@ -1,22 +1,28 @@
 /* Override Bootstrap */
-
+@media (min-width:  768px) { .container { width: 750px; } }
+@media (min-width:  992px) { .container { width: 750px; } } 
+@media (min-width: 1200px) { .container { width: 750px; } }
 
 /* My CSS */
+.work_title {
+    margin-bottom: 10px;
+}
+
+.work_title h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #3F4F51;
+    margin: 0;
+    padding: 10px;
+    border-bottom: solid 1px #E0E0E0;
+}
+
 .work_img {
     padding: 5px;
 }
 
 .work_caption {
     margin-bottom: 50px;
-}
-
-.work_caption h2 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #3F4F51;
-    margin: 0;
-    padding: 10px 0 10px;
-    border-bottom: solid 1px #E0E0E0;
 }
 
 .work_caption h3 {
