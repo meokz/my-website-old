@@ -89,6 +89,14 @@ li.github   { background-image:url("./img/github.png"); }
     padding: 0px 15px 0px 15px;
 }
 
+.organization .url {
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    width: 24px;
+    height:24px;
+}
+
 .achievement h3 {
     padding-left: 15px;
 }
