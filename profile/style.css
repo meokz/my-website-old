@@ -94,6 +94,14 @@ li.github   { background-image:url("./img/github.png"); }
     margin: 0px;
 }
 
+.list {
+    padding-left: 5%;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
 .tag ul {
     padding: 5px;
 }
