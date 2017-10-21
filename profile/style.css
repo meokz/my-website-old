@@ -70,21 +70,6 @@ li.github   { background-image:url("./img/github.png"); }
     font-size: 19px;
 }
 
-.tag ul {
-    padding: 5px;
-}
-
-.tag li {
-    font-size: 12px;
-    display: inline-block;
-    padding: 5px 10px 5px 10px;
-    max-width:50%; /* limit width */
-    word-break:break-all; /* wrap extended text*/
-    color: #3BBEFF;
-    border: 1px solid #3BBEFF;
-    border-radius: 10px;
-}
-
 .organization-table {
     padding: 0px 15px 0px 15px;
 }
@@ -100,3 +85,34 @@ li.github   { background-image:url("./img/github.png"); }
 .achievement h3 {
     padding-left: 15px;
 }
+
+.achievement li {
+    margin: 10px;
+}
+
+.achievement li > div > p {
+    margin: 0px;
+}
+
+.tag ul {
+    padding: 5px;
+}
+
+.tag li {
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px 10px 3px 10px;
+    margin: 1px;
+    max-width:100%; /* limit width */
+    word-break:break-all; /* wrap extended text*/
+    color: #3BBEFF;
+    /*color: #FFF;*/
+    /*background-color: #3BBEFF;*/
+    border: 1px solid #3BBEFF;
+    border-radius: 10px;
+}
+
+.tag a:link    { color: #3BBEFF; }
+.tag a:visited { color: #3BBEFF; }
+.tag a:hover   { color: #3BBEFF; }
+.tag a:active  { color: #3BBEFF; }
