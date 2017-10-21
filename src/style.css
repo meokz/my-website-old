@@ -97,7 +97,7 @@ h2 {
     font-size: 10px;
     display: inline-block;
     padding: 5px 10px 5px 10px;
-    max-width:50%; /* limit width */
+    max-width:100%; /* limit width */
     word-break:break-all; /* wrap extended text*/
     color: #FFF;
     background-color: #3BBEFF;
