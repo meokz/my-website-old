@@ -3,6 +3,11 @@
 @media (min-width:  992px) { .container { width: 750px; } } 
 @media (min-width: 1200px) { .container { width: 750px; } }
 
+a:link    { color: #000000; }
+a:visited { color: #000000; }
+a:hover   { color: #ff0000; }
+a:active  { color: #ff8000; }
+
 /* My CSS */
 .work_title {
     margin-bottom: 10px;
