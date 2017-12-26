@@ -42,6 +42,7 @@ li.twitter  { background-image:url("./img/twitter.png"); }
 li.facebook { background-image:url("./img/facebook.png"); }
 li.skype    { background-image:url("./img/skype.png"); }
 li.github   { background-image:url("./img/github.png"); }
+li.slideshare   { background-image:url("./img/slideshare.png"); }
 
 .link li > a{
     padding-left: 40px;
