@@ -116,14 +116,12 @@ li.slideshare   { background-image:url("./img/slideshare.png"); }
     margin: 1px;
     max-width:100%; /* limit width */
     word-break:break-all; /* wrap extended text*/
-    color: #3BBEFF;
-    /*color: #FFF;*/
-    /*background-color: #3BBEFF;*/
-    border: 1px solid #3BBEFF;
+    color: #FFF;
+    background-color: #3BBEFF;
     border-radius: 10px;
 }
+}
 
-.tag a:link    { color: #3BBEFF; }
-.tag a:visited { color: #3BBEFF; }
-.tag a:hover   { color: #3BBEFF; }
-.tag a:active  { color: #3BBEFF; }
+.tag ul {
+    padding: 5px;
+}
