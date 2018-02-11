@@ -73,6 +73,10 @@ li.slideshare   { background-image:url("./img/slideshare.png"); }
     font-size: 19px;
 }
 
+.publication_p {
+    font-size: 14px;
+}
+
 .organization-table {
     padding: 0px 15px 0px 15px;
 }
