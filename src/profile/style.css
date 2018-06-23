@@ -13,13 +13,23 @@ a:active  { color: #ff8000; }
 }
 
 /* My CSS */
+
 h2 {
+    font-size: 20px;
     padding: 0px 10px 10px 10px;
     text-align: center;
     border-bottom: solid 1px #D2D2D2;
 }
 
 h3 { font-size: 18px; }
+
+p {
+    font-size: 14px;
+}
+
+.small_p {
+    font-size: 12px;
+}
 
 ul { list-style:none; }
 
@@ -71,10 +81,6 @@ li.slideshare   { background-image:url("./img/slideshare.png"); }
 
 .reink {
     font-size: 19px;
-}
-
-.small_p {
-    font-size: 14px;
 }
 
 .organization-table {
