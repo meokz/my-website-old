@@ -59,14 +59,7 @@
   <section class="section section-defalut">
     <div class="container">
       <h2>Publication</h2>
-
-      <h3>Book - 書籍</h3>
-      <ol>
-        <li>
-          <a href="https://www.cmcbooks.co.jp/products/detail.php?product_id=5450" target="_blank">山本裕紹 監修. 空中ディスプレイの開発と応用展開 (Recent Developments and Prospective Applications of Aerial Display). シーエムシー出版, 2018, 267p. (第Ⅲ編，第9章を分担執筆)</a>
-        </li>
-      </ol>
-
+      
       <div id="publication"></div>
 
     </div>
@@ -86,7 +79,7 @@ $(window).on("load",function(){
       $.each(parent, function(i, item) {
         li = $(
           '<li>' + 
-          '<a href="' + item.url + '">' + item.title + '</a>' +
+          '<a href="' + item.url + '" target="' + item.target + '"">' + item.title + '</a>' +
           '</li>');
         ol.append(li);
       });
