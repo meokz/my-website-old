@@ -217,14 +217,14 @@ $(window).on("load",function(){
       project.append($("<h2></h2>").html(i));
       
       $.each(parent, function(i, item) {
-        if (count % 2 == 0) {
+        if (count % 3 == 0) {
           row = $("<div></div>", {
             'class': 'row'
           });
         }
 
         var work = $('<div></div>', {
-          'class' : "col-xs-12 col-sm-6"
+          'class' : "col-xs-12 col-sm-4"
         })
         .html(
           '<div class="work">' + 
