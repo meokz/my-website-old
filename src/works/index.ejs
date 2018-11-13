@@ -4,10 +4,10 @@
 <% var title = ""; %>
 <% var dir ="../"; %>
 <% var url ="recruit"; %>
-<% var image_url ="img/jumbotron2.jpg"; %>
+<% var image_url ="res/img/jumbotron2.jpg"; %>
 <% var description ="Here is Kazuki OTAO's Portforlio for Recruit."; %>
 <% include ./../ejs/head %>
-  <link href="style.css" rel="stylesheet">
+  <link href="res/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 <script>
 $(window).on("load",function(){
   
-  $.getJSON("data/projects.json", function(data, status) {
+  $.getJSON("res/data/projects.json", function(data, status) {
 
     var project = $("#project");
   
