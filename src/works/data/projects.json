@@ -1,0 +1,165 @@
+{
+	"Research" : [
+		{
+			"title" : "MistFlow",
+			"url" : "mistflow",
+			"people" : "2",
+			"date" : "2016/7 - 2017/11",
+			"description" : "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを研究開発しました。",
+			"tag" : [
+				"SIGGRAPH Asia 2017", "情報処理学会インタラクション2017"
+			]
+		},
+		{
+			"title" : "Air Mounted Eyepiece",
+			"url" : "airmountedeyepiece",
+			"people" : "5",
+			"date" : "2017/05 - 2018/08",
+			"description" : "Air Mounted Displayは拡張現実のための新しいヘッドマウントディスプレイです。空中レンズによってVR用のHMDと同等の広視野角な映像を提供します。",
+			"tag" : [
+				"SIGGRAPH 2018", "Augmented Human 2018"
+			]
+		},
+		{
+			"title" : "Glassbeads Display",
+			"url" : "glassbeads",
+			"people" : "5",
+			"date" : "2017/05 -",
+			"description" : "半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。",
+			"tag" : [
+				"Media Ambition Tokyo 2018", "SIGGRAPH Asia 2017"
+			]
+		},
+		{
+			"title" : "Light Field Blender",
+			"url" : "lightfieldblender",
+			"people" : "6",
+			"date" : "2017/05 - 2017/11",
+			"description" : "Light Field Blenderは拡張現実のための新しいヘッドマウントディスプレイです。小型・軽量化が可能であり，被写界深度を再現します。",
+			"tag" : [
+				"SIGGRAPH Asia 2017", "Ars Electronica 2017"
+			]
+		}
+	],
+
+	"Product" : [
+		{
+			"title" : "Mealie：学食食券オンライン予約システム",
+			"url" : "mealie",
+			"people" : "4",
+			"date" : "2015/11 - 2016/10",
+			"description" : "Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。遠い食堂まで行く手間を省き，自分の食べたいメニューを確実に予約します。",
+			"tag" : [
+				"U-22プロコン 経済産業省商務情報政策局長賞"
+			]
+		},
+		{
+			"title" : "Pianist：鍵盤楽器運指練習システム",
+			"url" : "pianist",
+			"people" : "8",
+			"date" : "2014/11 - 2015/10",
+			"description" : "PianistはMRデバイスとモーションセンサにより，鍵盤楽器の指運びの練習を支援します。運指情報の自動生成(from MIDI)やクラウドを通じた運指情報の共有も可能です。",
+			"tag" : [
+				"高専プロコン2015 敢闘賞"
+			]
+		},
+		{
+			"title" : "RAZIOくん：ラジオ体操支援システム",
+			"url" : "raziokun",
+			"people" : "8",
+			"date" : "2012/11 - 2013/10",
+			"description" : "RAZIOくんはKinectを用いてラジオ体操の採点を行うシステムです。カラオケのように自分のラジオ体操を採点してくれる楽しさと，懐かしみのあるスタンプ機能でモチベーションを保ちつつ，健康を促進します。",
+			"tag" : [
+				"高専プロコン2013 敢闘賞"
+			]
+		}
+	],
+
+	"Entertainment" : [
+		{
+			"title" : "ピタゴラメーカー",
+			"url" : "pitagora",
+			"people" : "2",
+			"date" : "2017/12",
+			"description" : "自分だけのピタゴラスイッチを作って遊ぼう！",
+			"tag" : []
+		},
+		{
+			"title" : "Blackboard",
+			"url" : "blackboard",
+			"people" : "2",
+			"date" : "2015/12 - 2016/03",
+			"description" : "BlackboardはUnityを使用した映像作品です。Unityの物理ベースレンダリングやImage Based Lightingを使用して通常の3DCGソフトに負けないリアルな映像を撮影しました。",
+			"tag" : [
+				"コンフェス2016 メディア部門1位"
+			]
+		},
+		{
+			"title" : "SpaceWars",
+			"url" : "spacewars",
+			"people" : "2",
+			"date" : "2014/12 - 2015/03",
+			"description" : "自ユニットを弾き飛ばして敵ユニットに攻撃します。ユニットはHPが0になるか，ステージから落とされると消滅します。いろいろな戦略を楽しむだけでなく，グラフィクスエフェクトと物理演算による爽快なプレイを楽しむことができます。",
+			"tag" : [
+				"コンフェス2015 ソフトウェア部門1位"
+			]
+		},
+		{
+			"title" : "大蛇の乱：現実とデジタル世界がリンクしたARアトラクション",
+			"url" : "taijyanoran",
+			"people" : "15",
+			"date" : "2013/12 - 2014/11",
+			"description" : "大蛇の乱は，全長2mもある5体の大蛇を複数人のプレイヤーで協力しながら撃破するアトラクション企画です．現実世界とデジタルな世界がARによって結びつきます。",
+			"tag" : []
+		},
+		{
+			"title" : "PokeDora",
+			"url" : "pokedora",
+			"people" : "1",
+			"date" : "2013",
+			"description" : "本来はUIの制作に使用されるSwingを元に簡単にゲームが作れるライブラリを制作しました。また，自作したライブラリを用いてポケモン風のゲームを作りデモを行いました。",
+			"tag" : []
+		}
+	],
+
+	"Hackathon" : [
+		{
+			"title" : "ProjectQuest",
+			"url" : "projectquest",
+			"people" : "4",
+			"date" : "2017/09",
+			"description" : "エンジニア+デザイナをマッチングさせ，与えられたシステム開発のお題を一緒に取り組むことで，様々な人と出会いつつ技術を高めることができるWebサービス。",
+			"tag" : [
+				"レバレジーズ湯けむりハッカソン 優勝"
+			]
+		},
+		{
+			"title" : "WakeUpVoice",
+			"url" : "wakeupvoice",
+			"people" : "4",
+			"date" : "2017/08",
+			"description" : "普通の目覚ましでは起きれない人向けの目覚ましアプリです。事前に設定したワードを自らが大きな声で発声し，音声認識により正しいと判断されなければアラームが解除されません。朝から元気に声を出すことで覚醒を促します。",
+			"tag" : []
+		},
+		{
+			"title" : "drofie：シェアドローン自撮りサービス",
+			"url" : "drofie",
+			"people" : "3",
+			"date" : "2016/09",
+			"description" : "観光地などに設置されたドローンで空中から自撮りを撮り，旅の思い出を作れるサービス。エンドユーザがアプリを起動すると自動でドローンが指定ポイントまで移動し，カメラの映像をストリーミングしてくれます。",
+			"tag" : [
+				"サイバーエージェントKyotoHack 特別賞"
+			]
+		},
+		{
+			"title" : "あるせん",
+			"url" : "arusen",
+			"people" : "3",
+			"date" : "2015/11",
+			"description" : "高専でありがちな川柳をGoogle Chromeの上から投稿・閲覧・いいねできるChrome拡張機能です。",
+			"tag" : [
+				"チームラボオンラインハッカソン 優秀賞"
+			]
+		}
+	]
+}

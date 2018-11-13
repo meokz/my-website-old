@@ -1,3 +1,7 @@
+/*@media (min-width:  768px) { .container { width: 750px; } }*/
+/*@media (min-width:  992px) { .container { width: 750px; } } */
+@media (min-width: 1200px) { .container { width: 750px; } }
+
 /* Override Bootstrap */
 header.jumbotron {
     background: url("./../img/jumbotron2.jpg");
@@ -10,6 +14,22 @@ header.jumbotron {
 
 header .container {
 	margin: 10%;
+}
+
+h2 {
+    padding: 0px 10px 10px 10px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: solid 1px #D2D2D2;
+    margin-top: 5px;
+}
+
+h3 {
+    padding: 0px 10px 10px 10px;
+    font-size: 20px;
+    /*text-align: center;*/
+    border-bottom: solid 1px #D2D2D2;
+    margin-top: 5px;
 }
 
 .navbar {
@@ -27,7 +47,7 @@ header .container {
 }
 /* My CSS */
 .work {
-    margin: 5px;
+    
 }
 
 .work_img {
@@ -65,7 +85,7 @@ header .container {
 }
 
 .work_caption p {
-    font-size: 16px;
+    font-size: 14px;
     color: #696969;
     margin: 0;
     padding-top: 5px;
