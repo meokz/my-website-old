@@ -1,4 +1,11 @@
 {
+	"Book - 書籍" : [
+		{
+			"title" : "山本裕紹 監修. 空中ディスプレイの開発と応用展開 (Recent Developments and Prospective Applications of Aerial Display). シーエムシー出版, 2018, 267p. (第Ⅲ編，第9章を分担執筆)",
+			"url" : "https://www.cmcbooks.co.jp/products/detail.php?product_id=5450",
+			"target" : "_blank"
+		}
+	],
     "Thesis - 卒業論文" : [
 		{
 			"title" : "霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討（指導教官・古賀崇了准教授）平成28年度 徳山高専情報電子工学科 卒業論文",
