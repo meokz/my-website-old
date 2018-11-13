@@ -75,9 +75,14 @@ $(window).on("load",function(){
       ol = $("<ol></ol>");
 
       $.each(parent, function(i, item) {
+        var target = item.target;
+        if(target == undefined) {
+          target = ""
+        }
+
         li = $(
           '<li>' + 
-          '<a href="' + item.url + '" target="' + item.target + '"">' + item.title + '</a>' +
+          '<a href="' + item.url + '" target="' + target + '"">' + item.title + '</a>' +
           '</li>');
         ol.append(li);
       });
