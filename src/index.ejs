@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="ja">
+<html lang="ja">
 <head>
-<% include ejs/head_top %>
+<% var title = "Profile | "; %>
+<% var dir ="./"; %>
+<% var url ="profile/"; %>
+<% var image_url ="profile/img/portrait2.jpg"; %>
+<% var description ="大峠 和基 (Otao Kazuki) - Profile"; %>
+<% include ./ejs/head_profile %>
   <link href="style.css" rel="stylesheet">
   <script>
   $(function(){
@@ -16,389 +21,545 @@
 <body>
 <% include ejs/nav %>
 
-  <header class="jumbotron">
-    <div class="container">
-      <h1>meo-cs.net</h1>
-      <p>Here is Kazuki OTAO's Portforlio.</p>
-      <p>Programming, Art, Novel, etc. For <a href="./profile">Recruit</a>.</p>
-    </div>
-  </header>
-
   <section class="section section-defalut">
-  <div class="container">
+    <div class="container">
 
-    <div class="representative-works">
-    <h2>Representative Works</h2>
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="./works/mistflow/">
-          <img class="img-responsive" src="./img/thumbnail/mistflow.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">MistFlow</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2016/7 - 2017/11 <span class="glyphicon glyphicon-user"></span> 2人</p>
-        <p>手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを研究開発しました。</p>
-        <div class="tag">
-          <ul>
-            <li>SIGGRAPH Asia 2017</li>
-            <li>情報処理学会インタラクション2017</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="./works/reink/">
-          <img class="img-responsive" src="./img/thumbnail/reink.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">Re:ink：干渉可能なプロジェクションマッピング</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2014/12 - 2015/11　<span class="glyphicon glyphicon-user"></span> 17人<p>
-        <p>Re:inkは真っ白になった工場を学園祭の来場者の手によって蘇らせるインスタレーションです。Unityを用いて映像を生成・同期することで，再生するたびに異なるストーリーが展開します。</p>
-        <!-- <p><span class="glyphicon glyphicon-home"></span>高専祭実行委員メイン部署</p> -->
-      </div>
-    </div>
-
-    </div>
-    <!-- <div class="representative-works"> -->
-
-    <div class="research">
-    <h2>Research</h2>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="./works/airmountedeyepiece">
-          <img class="img-responsive" src="./img/thumbnail/airmountedeyepiece.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">Air Mounted Eyepiece</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span>2017/05 - 2018/08　<span class="glyphicon glyphicon-user"></span> 5人</p>
-        <p>Air Mounted Displayは拡張現実のための新しいヘッドマウントディスプレイです。空中レンズによってVR用のHMDと同等の広視野角な映像を提供します。</p>
-        <div class="tag">
-          <ul>
-            <li>SIGGRAPH 2018</li>
-            <li>Augmented Human 2018</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="./works/glassbeads">
-          <img class="img-responsive" src="./img/thumbnail/AIRP.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">Glassbeads Display</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2017/05 -　<span class="glyphicon glyphicon-user"></span> 5人</p>
-        <p>半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。</p>
-        <div class="tag">
-          <ul>
-            <li>Media Ambition Tokyo 2018</li>
-            <li>SIGGRAPH Asia 2017</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="./works/lightfieldblender">
-          <img class="img-responsive" src="./img/thumbnail/metamateglass.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">Light Field Blender</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2017/05 - 2017/11 <span class="glyphicon glyphicon-user"></span> 6人</p>
-        <p>Light Field Blenderは拡張現実のための新しいヘッドマウントディスプレイです。小型・軽量化が可能であり，被写界深度を再現します。 </p>
-        <div class="tag">
-          <ul>
-            <li>SIGGRAPH Asia 2017</li>
-            <li>Ars Electronica 2017</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- class="research" -->
-
-    <div class="product">
-    <h2>Product</h2>
-      <div class="row work">
+      <div class="profile">
+      <h2>Profile</h2>
+      <div class="row">
         <div class="col-xs-12 col-sm-4">
-          <a class="thumbnail" href="./works/mealie/">
-            <img class="img-responsive" src="./img/thumbnail/mealie.jpg">
+          <a class="thumbnail" href="./profile/img/portrait2.jpg">
+            <img class="img-responsive" src="./profile/img/portrait2.jpg">
           </a>
         </div>
         <div class="col-xs-12 col-sm-8">
-          <h3 class="work_title">Mealie：学食食券オンライン予約システム</h3>
-          <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2015/11 - 2016/10　<span class="glyphicon glyphicon-user"></span> 4人</p>
-          <p>Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。遠い食堂まで行く手間を省き，自分の食べたいメニューを確実に予約します。</p>
-          <div class="tag">
+
+          <h3>大峠 和基</h3>
+          <p>
+            1996年生まれ。
+            2012年から徳山高専で情報電子工学を学んだ後，2017年に筑波大学情報メディア創成学類に編入。
+            ミスター筑波大学2018 (ミスターキャンパス賞/企業賞)，U.22プログラミング・コンテスト (経済産業省商務情報政策局長賞/企業賞)，全国高専プログラミングコンテスト (敢闘賞2回)など多岐に渡る分野で活動。
+            2017年より落合陽一率いるデジタルネイチャー研究室に所属し，バーチャルリアリティを専門に研究を行う。
+            書籍1本，国際会議論文6本，国内会議論文1本。 
+            中国地方コンピュータフェスティバルではソフトウェア部門・メディア部門で3年連続最優秀賞を含む4回の受賞。
+            企業ハッカソンではチームラボ (最優秀賞)，サイバーエージェント (特別賞)，レバレジーズ (最優秀賞)に出場。
+          </p>
+          
+          <h3>Kazuki Otao</h3>
+          <p>Kazuki Otao was born in 1996. After studying computer science and electronic engineering at National Institute of Technology, Tokuyama College since 2012, he is incorporated into the College of Media Arts, Science and Technology at the University of Tsukuba in 2017. He got a prize in many contests including U-22 programming contest and national college of technology programming contest. He is an expert researcher of the aerial imaging system in Digital Nature Group.</p>
+
+          <p class="pdf"><a href="./profile/./portfolio/Resume2017.pdf" target="_blank">Resume (English)</a></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="career">
+        <h2>Career</h2>
+        <h4>学歴 / 職歴</h4>
+        <ul>
+          <li>2012/04 - 2017/03 　徳山工業高等専門学校 情報電子工学科</li>
+          <li>2017/04 - present. 　筑波大学 情報学群 情報メディア創成学類
+          (デジタルネイチャーグループ: 落合陽一研究室)</li>
+        </ul>
+        <ul>
+          <li>2015/08 - 2015/09 　チームラボ株式会社 インタラクティブチーム</li>
+          <li>2016/12 - 2017/08 　ユニロボット株式会社 Unityエンジニア</li>
+          <li>2017/09 - present. 　ピクシーダストテクノロジーズ株式会社 エンジニア</li> 
+        </ul>
+        
+        <h3>Academic Backgroud / Work Experience</h3>
+        <ul>
+          <li>2012/04 - 2017/03 　National Institute of Technology, Tokuyama College</li>
+          <li>2017/04 - present. 　University of Tsukuba, College of Media Arts, Science and Technology, Digital Nature Group (Yoichi Ochiai Lab.)</li>
+        </ul>
+        <ul>
+          <li>2015/08 - 2015/09 　Interactive Team at teamLab Inc.</li>
+          <li>2016/12 - 2017/08 　Unity Engineer at Unirobot Corporation.</li>
+          <li>2017/09 - present. 　Engineer at Pixie Dust Technologies, Inc.</li> 
+        </ul>
+      </div>
+
+      <div class="project">
+      <h2>Project</h2>
+        <div class="row work">
+          <div class="col-xs-12 col-sm-4">
+            <a class="thumbnail" href="./works/mistflow/">
+              <img class="img-responsive" src="./profile/img/mistflow.jpg">
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h3>MistFlow</h3>
+            <p>手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを研究開発しました。</p>
+            <div class="tag">
+            <ul>
+              <li>SIGGRAPH Asia 2017</li>
+              <li>情報処理学会インタラクション2017</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+
+        <div class="row work">
+          <div class="col-xs-12 col-sm-4">
+            <a class="thumbnail" href="./works/mealie/">
+              <img class="img-responsive" src="./profile/img/mealie.jpg">
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h3 class="reink">Mealie：学食食券オンライン予約システム</h3>
+            <p>Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。遠い食堂まで行く手間を省き，自分の食べたいメニューを確実に予約します。</p>
+            <div class="tag">
             <ul>
               <li>U-22プロコン 経済産業省商務情報政策局長賞</li>
             </ul>
           </div>
-          <!-- <p><span class="glyphicon glyphicon-home"></span>st@ck</p> -->
+          </div>
         </div>
+
+        <div class="row work">
+          <div class="col-xs-12 col-sm-4">
+            <a class="thumbnail" href="./works/reink/">
+              <img class="img-responsive" src="./profile/img/reink.jpg">
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h3 class="reink">Re:ink：干渉可能なプロジェクションマッピング</h3>
+            <p>Re:inkは真っ白になった工場を学園祭の来場者の手によって蘇らせるインスタレーションです。Unityを用いて映像を生成・同期することで，再生するたびに異なるストーリーが展開します。</p>
+          </div>
+        </div>
+        
+        <div class="row work">
+          <div class="col-xs-12 col-sm-4">
+            <a class="thumbnail" href="./works/smartmakura/">
+              <img class="img-responsive" src="./profile/img/smartmakura.jpg">
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h3>Smart枕</h3>
+            <p>Smart枕はAndroid端末と枕型デバイスが連携する新しいライフハックプロダクトです。枕型デバイスに組み込まれた圧力センサとバイブレーションを用いてユーザを確実に起こすとともに，睡眠情報を記録し，最適な睡眠時間を教えてくれます。</p>
+            <div class="tag">
+              <ul>
+                <li>パソコン甲子園2014</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row work">
+          <div class="col-xs-12 col-sm-4">
+            <a class="thumbnail" href="./works/spacewars/">
+              <img class="img-responsive" src="./profile/img/spacewars.jpg">
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h3>SpaceWars</h3>
+            <p>自ユニットを弾き飛ばして敵ユニットに攻撃します。ユニットはHPが0になるか，ステージから落とされると消滅します。いろいろな戦略を楽しむだけでなく，グラフィクスエフェクトと物理演算による爽快なプレイを楽しむことができます。</p>
+            <div class="tag">
+              <ul>
+                <li>コンフェス2015 ソフトウェア部門1位</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p align="right"><a href="./">>>> All Project</a></p>
       </div>
 
-      <div class="row work">
-        <div class="col-xs-12 col-sm-4">
-          <a class="thumbnail" href="./works/pianist/">
-            <img class="img-responsive" src="./img/thumbnail/pianist.jpg">
-          </a>
+      <div class="link">
+      <h2>Link</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <ul>
+            <li class="mail"><a href="#">kaootao"@"gmail.com</a></li>
+            <li class="twitter"><a href="https://twitter.com/0MeO" target="_blank">Twitter</a></li>
+            <li class="github"><a href="https://github.com/meokz" target="_blank">Github</a></li>
+            <li class="blog"><a href="https://www.wantedly.com/users/18420731" target="_blank">Wantedly</a></li>
+          </ul>
         </div>
-        <div class="col-xs-12 col-sm-8">
-          <h3 class="work_title">Pianist：鍵盤楽器運指練習システム</h3>
-          <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2014/11 - 2015/10　<span class="glyphicon glyphicon-user"></span> 8人</p>
-          <p>PianistはMRデバイスとモーションセンサにより，鍵盤楽器の指運びの練習を支援します。運指情報の自動生成(from MIDI)やクラウドを通じた運指情報の共有も可能です。</p>
-          <div class="tag">
-            <ul>
-              <li>高専プロコン2015 敢闘賞</li>
-            </ul>
-          </div>
-          <!-- <p><span class="glyphicon glyphicon-home"></span>NewMediaClub</p> -->
+        <div class="col-xs-12 col-sm-6">
+          <ul>
+            <li class="blog"><a href="http://meokz.hatenablog.com/" target="_blank">meokz.hatenablog.com</a></li>
+            <li class="facebook"><a href="https://www.facebook.com/kaootao" target="_blank">Facebook</a></li>
+            <li class="slideshare"><a href="https://www.slideshare.net/kaootao" target="_blank">SlideShare</a></li>
+            <!-- <li class="skype"><a href="#">meokz_</a></li> -->
+          </ul>
         </div>
+      </div>
       </div>
 
-      <div class="row work">
-        <div class="col-xs-12 col-sm-4">
-          <a class="thumbnail" href="../works/smartmakura/">
-            <img class="img-responsive" src="./img/thumbnail/smartmakura2.jpg">
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-8">
-          <h3 class="work_title">Smart枕</h3>
-          <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2014/03 - 2014/11　<span class="glyphicon glyphicon-user"></span> 3人</p>
-          <p>Smart枕はAndroid端末と枕型デバイスが連携する新しいライフハックプロダクトです。枕型デバイスに組み込まれた圧力センサとバイブレーションを用いてユーザを確実に起こすとともに，睡眠情報を記録し，最適な睡眠時間を教えてくれます。</p>
-          <div class="tag">
-            <ul>
-              <li>パソコン甲子園2014</li>
-            </ul>
+      <div class="publication">
+      <h2>Publication</h2>
+
+      <h3>Book - 書籍</h3>
+      <ol class="list">
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p class="small_p"><a href="https://www.cmcbooks.co.jp/products/detail.php?product_id=5450" target="_blank">山本裕紹 監修. 空中ディスプレイの開発と応用展開 (Recent Developments and Prospective Applications of Aerial Display). シーエムシー出版, 2018, 267p. (第Ⅲ編，第9章を分担執筆)</a></p>
           </div>
-          <!-- <p><span class="glyphicon glyphicon-home"></span>sl@ck</p> -->
-        </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="https://www.cmcbooks.co.jp/products/detail.php?product_id=5450">
+              <img class="img-responsive" src="./profile/works/aerialdisplay.jpg">
+            </a>
+          </div>
+        </li>
+      </ol>
+
+      <h3>International Conference Papers - 査読あり国際会議論文</h3>
+      <ol class="list">
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p class="small_p"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Air Mounted Eyepiece: Optical See-Through HMD Design with Aerial Optical Functions. In <em>Proceedings of the 9th Augmented Human International Conference</em> (AH ’18). ACM, New York, NY, USA, Article 1, 7 pages. DOI: https://doi.org/10.1145/3174910.3174911</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/airmountedeyepiece">
+              <img class="img-responsive" src="./profile/works/airmountedeyepiece.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p class="small_p"><u>Kazuki Otao</u>, Yuta Itoh, Hiroyuki Osone, Kazuki Takazawa, Shunnosuke Kataoka, and Yoichi Ochiai. 2017. Light field blender: designing optics and rendering methods for see-through and aerial near-eye display. In <em>SIGGRAPH Asia 2017 Technical Briefs</em> (SA '17). ACM, New York, NY, USA, Article 9, 4 pages. DOI: https://doi.org/10.1145/3145749.3149425</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/lightfieldblender">
+              <img class="img-responsive" src="./profile/works/metamateglass.jpg">
+            </a>
+          </div>
+        </li>
+      </ol>
+
+      <h3>International Conference Posters - 査読あり国際会議ポスター発表</h3>
+      <ol class="list">
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p class="small_p">Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Posters</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3230744.3230810</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/retinalprojector/">
+              <img class="img-responsive" src="./profile/works/AMRP.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p class="small_p"><u>Kazuki Otao</u> and Takanori Koga. 2017. Mistflow: a fog display for visualization of adaptive shape-changing flow. In <em>SIGGRAPH Asia 2017 Posters</em> (SA '17). ACM, New York, NY, USA, Article 17, 2 pages. DOI: https://doi.org/10.1145/3145690.3145696</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/mistflow/">
+              <img class="img-responsive" src="./profile/works/mistflow.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p class="small_p">Shinnosuke Ando, <u>Kazuki Otao</u>, Kazuki Takazawa, Yusuke Tanemura, and Yoichi Ochiai. 2017. Aerial image on retroreflective particles. In <em>SIGGRAPH Asia 2017 Posters</em> (SA '17). ACM, New York, NY, USA, Article 7, 2 pages. DOI: https://doi.org/10.1145/3145690.3145730</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/glassbeads">
+              <img class="img-responsive" src="./profile/works/glassbeads.jpg">
+            </a>
+          </div>
+        </li>
+      </ol>
+
+      <p align="right"><a href="./publication">>>> All Publication</a></p>
+      </div>
+      
+      <div class="achievement">
+      <h2>Exhibition</h2>
+        <ol class="list">
+          <li class="row">
+            <div class="col-xs-7 col-sm-9 no-padding-left">
+              <p>Shinnosuke Ando, <u>Kazuki Otao</u>, Kazuki Takazawa, Yoichi Ochiai. 2018.</p>
+              <p><u>Glass beads display</u></p>
+              <p>Media Ambition Tokyo, Roppongi Hills, Tokyo. 2018.2.9-25</p>
+            </div>
+            <div class="col-xs-5 col-sm-3">
+              <a class="thumbnail" href="http://mediaambitiontokyo.jp/glassbeadsdisplay/" target="_blank">
+                <img class="img-responsive" src="./profile/works/glassbeads.jpg">
+              </a>
+            </div>
+          </li>
+          <li class="row">
+            <div class="col-xs-7 col-sm-9 no-padding-left">
+              <p>森篤史, <u>大峠和基</u>. 2017.</p>
+              <p><u>ピタゴラメーカー</u></p>
+              <p>「俺のピタゴラ」展, 茨城. 2017.12.16-17</p>
+            </div>
+            <div class="col-xs-5 col-sm-3">
+              <a class="thumbnail" href="https://digitalcontents2017.github.io/" target="_blank">
+                <img class="img-responsive" src="./profile/works/pitagora-ten.png">
+              </a>
+            </div>
+          </li>
+          <li class="row">
+            <div class="col-xs-7 col-sm-9 no-padding-left">
+              <p>Digital Nature Group at the University of Tsukuba, Pixie Dust Technologies Inc. 2017.</p>
+              <p><u>Recomposition of Human Presence: Waves, Material, and Intelligence</u></p>
+              <p>Ars Electronica Festival, Linz, Austria, 2017.09.07-11</p>
+            </div>
+            <div class="col-xs-5 col-sm-3">
+              <a class="thumbnail" href="https://www.aec.at/ai/de/recomposition-of-human-presence/" target="_blank">
+                <img class="img-responsive" src="./profile/works/ars2017.jpg">
+              </a>
+            </div>
+          </li>
+          <li class="row">
+            <div class="col-xs-7 col-sm-9 no-padding-left">
+              <p>徳山高専祭メイン部署. 2015.</p>
+              <p><u>Re:ink</u></p>
+              <p>徳山高専 高専祭, 山口, 2015.10.31-11.1</p>
+            </div>
+            <div class="col-xs-5 col-sm-3">
+              <a class="thumbnail" href="./works/reink/">
+                <img class="img-responsive" src="./profile/works/reink.jpg">
+              </a>
+            </div>
+          </li>
+          <li class="row">
+            <div class="col-xs-7 col-sm-9 no-padding-left">
+              <p>徳山高専祭メイン部署. 2014.</p>
+              <p><u>大蛇の乱</u></p>
+              <p>徳山高専 高専祭, 山口, 2014.11.1-11.2</p>
+            </div>
+            <div class="col-xs-5 col-sm-3">
+              <a class="thumbnail" href="./works/taijyanoran/">
+                <img class="img-responsive" src="./profile/works/taijyanoran.jpg">
+              </a>
+            </div>
+          </li>
+        </ol>
       </div>
 
-      <div class="row work">
-        <div class="col-xs-12 col-sm-4">
-          <a class="thumbnail" href="../works/raziokun/">
-            <img class="img-responsive" src="./img/thumbnail/raziokun.jpg">
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-8">
-          <h3 class="work_title">RAZIOくん：ラジオ体操支援システム</h3>
-          <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2012/11 - 2013/10　<span class="glyphicon glyphicon-user"></span> 8人</p>
-          <p>RAZIOくんはKinectを用いてラジオ体操の採点を行うシステムです。カラオケのように自分のラジオ体操を採点してくれる楽しさと，懐かしみのあるスタンプ機能でモチベーションを保ちつつ，健康を促進します。</p>
-          <div class="tag">
-            <ul>
-              <li>高専プロコン2013 敢闘賞</li>
-            </ul>
+      <div class="achievement">
+      <h2>Achievement</h2>
+
+      <h3>Contest</h3>
+      <ol class="list">
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p>片岡駿之介, <u>大峠和基</u>, 野坂峻大, 伊藤 駿介. 2016</p>
+            <p><u>Mealie -ミライ-</u></p>
+            <p>U-22プログラミング・コンテスト2016, 経済産業省商務情報政策局長賞/OBC賞</p>
           </div>
-          <!-- <p><span class="glyphicon glyphicon-home"></span>NewMediaClub</p> -->
-        </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/mealie/">
+              <img class="img-responsive" src="./profile/works/mealie.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p><u>大峠和基</u>, 石丸佑香. 2016</p>
+            <p><u>Blackboard</u></p>
+            <p><a href="http://ooshima-confes.webnode.jp/" target="_blank"> コンピュータフェスティバル メディア部門1位</a></p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/blackboard/">
+              <img class="img-responsive" src="./profile/works/blackboard.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p>徳山高専ニューメディア部. 2015</p>
+            <p><u>Pianist―鍵盤楽器運指練習システム―</u></p>
+            <p>全国高等専門学校プログラミングコンテスト, 第26回長野大会, 自由部門, 敢闘賞</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/pianist/">
+              <img class="img-responsive" src="./profile/works/pianist.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p><u>大峠和基</u>, 石丸佑香. 2015</p>
+            <p><u>SpaceWars</u></p>
+            <p><a href="http://comfes2015.github.io/" target="_blank">コンピュータフェスティバル2015, ソフトウェア部門1位</a></p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/spacewars/">
+              <img class="img-responsive" src="./profile/works/spacewars.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p><u>大峠和基</u>, 片岡駿之介, 安念駿利. 2014</p>
+            <p><u>Smart枕</u></p>
+            <p>第12回全国高等学校パソコンコンクール, パソコン甲子園2014, モバイル部門, 本選出場</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/smartmakura/">
+              <img class="img-responsive" src="./profile/works/smartmakura.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p><u>大峠和基</u>, 他. 2014</p>
+            <p><u>天樂</u></p>
+            <p><a href="http://comfes2014.tct-newmedia.net/" target="_blank">コンピュータフェスティバル2014, メディア部門1位</a></p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p>徳山高専ニューメディア部. 2013</p>
+            <p><u>RAZIOくん―ラジオ体操支援システム―</u></p>
+            <p>全国高等専門学校プログラミングコンテスト, 第24回旭川大会, 課題部門, 敢闘賞</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/raziokun/">
+              <img class="img-responsive" src="./profile/works/raziokun.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p><u>大峠和基</u>. 2013</p>
+            <p><u>Simple Action</u></p>
+            <p>コンピュータフェスティバル2013, ソフトウェア部門3位</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+          </div>
+        </li>
+      </ol>
+
+      <h3>Hackathon</h3>
+      <ol class="list">
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p>Next Wave. 2017</p>
+            <p><u>Project Quest</u></p>
+            <p>湯けむりハッカソン HACKERS BATTLE 優勝</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/projectquest/">
+              <img class="img-responsive" src="./profile/works/projectquest.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p>やりがい. 2016</p>
+            <p><u>drofie</u></p>
+            <p>サイバーエージェントKyotoHack 特別賞</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/drofie/">
+              <img class="img-responsive" src="./profile/works/drofie.jpg">
+            </a>
+          </div>
+        </li>
+        <li class="row">
+          <div class="col-xs-7 col-sm-9 no-padding-left">
+            <p>Team B. 2015</p>
+            <p><u>あるせん</u></p>
+            <p>チームラボオンラインハッカソン 優秀賞</p>
+          </div>
+          <div class="col-xs-5 col-sm-3">
+            <a class="thumbnail" href="./works/arusen/">
+              <img class="img-responsive" src="./profile/works/arusen.jpg">
+            </a>
+          </div>
+        </li>
+      </ol>
+      <h3>Others</h3>
+      <ol>
+        <li>
+          <p>TSUKUBA COLLECTION 2018 ミスターキャンパス賞 / ビフォパ賞. 2018</p>
+        </li>
+        <li>
+          <p>TOEIC 815点. 2016</p>
+        </li>
+        <li>
+          <p>応用情報技術者. 2013秋</p>
+        </li>
+        <li>
+          <p>基本情報技術者. 2013春</p>
+        </li>
+        <li>
+          <p>Miminashi Hoichi, 中国高専英語暗唱・弁論大会 暗唱の部1位. 2012</p>
+        </li>
+      </ol>
+
+      <div id="media">
+        <h2>Media</h2>
       </div>
+      
     </div>
-
-    <div class="entertainment">
-    <h2>Entertainment</h2>
     
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="https://digitalcontents2017.github.io/">
-          <img class="img-responsive" src="">
-        </a>
+    <div class="skill">
+      <h2>Technical Skills</h2>
+      <h3>Expert</h3>
+      <div class="tag-no-color">
+        <ul>
+          <li class="tag-blue">C#</li>
+          <li class="tag-blue">Unity</li>
+        </ul>
       </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">ピタゴラメーカー</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2017/12　<span class="glyphicon glyphicon-user"></span> 2人</p>
-        <p>自分だけのピタゴラスイッチを作って遊ぼう！</p>
-        <!-- <p><span class="glyphicon glyphicon-home"></span>rain</p> -->
+      <h3>Advanced</h3>
+      <div class="tag-no-color">
+        <ul>
+          <li class="tag-blue">Java</li>
+          <li class="tag-blue">Git</li>
+        </ul>
       </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="../works/blackboard/">
-          <img class="img-responsive" src="./img/thumbnail/blackboard.jpg">
-        </a>
+      <h3>Intermediate</h3>
+      <div class="tag-no-color">
+        <ul>
+          <li class="tag-blue">C / C++</li>
+          <li class="tag-blue">Android (Java)</li>
+          <li class="tag-blue">Visual Basic</li>
+          <li class="tag-blue">Bootstrap</li>
+          <li class="tag-yellow">Blender</li>
+          <li class="tag-yellow">Photoshop</li>
+          <li class="tag-yellow">AfterEffects</li>
+        </ul>
       </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">Blackboard</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2015/12 - 2016/03　<span class="glyphicon glyphicon-user"></span> 2人</p>
-        <p>BlackboardはUnityを使用した映像作品です。Unityの物理ベースレンダリングやImage Based Lightingを使用して通常の3DCGソフトに負けないリアルな映像を撮影しました。</p>
-        <div class="tag">
-          <ul>
-            <li>コンフェス2016 メディア部門1位</li>
-          </ul>
-        </div>
-        <!-- <p><span class="glyphicon glyphicon-home"></span>rain</p> -->
+      <h3>Basic</h3>
+      <div class="tag-no-color">
+        <ul>
+          <li class="tag-blue">Python</li>
+          <li class="tag-blue">Ruby</li>
+          <li class="tag-blue">Swift (iOS)</li>
+          <li class="tag-blue">HTML / CSS</li>
+          <li class="tag-yellow">Illustrator</li>
+          <li class="tag-yellow">Premiere Pro</li>
+          <!-- <li>THREE.js</li> -->
+          <!-- <li>WebGL</li> -->
+        </ul>
       </div>
-    </div>
-    
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="../works/spacewars/">
-          <img class="img-responsive" src="./img/thumbnail/spacewars.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">SpaceWars</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2014/12 - 2015/03　<span class="glyphicon glyphicon-user"></span> 2人</p>
-        <p>自ユニットを弾き飛ばして敵ユニットに攻撃します。ユニットはHPが0になるか，ステージから落とされると消滅します。いろいろな戦略を楽しむだけでなく，グラフィクスエフェクトと物理演算による爽快なプレイを楽しむことができます。</p>
-        <div class="tag">
-          <ul>
-            <li>コンフェス2015 ソフトウェア部門1位</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="../works/taijyanoran/">
-          <img class="img-responsive" src="./img/thumbnail/taijyanoran.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">大蛇の乱：現実とデジタル世界がリンクしたARアトラクション</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2013/12 - 2014/11　<span class="glyphicon glyphicon-user"></span> 15人</p>
-        <p>大蛇の乱は，全長2mもある5体の大蛇を複数人のプレイヤーで協力しながら撃破するアトラクション企画です．現実世界とデジタルな世界がARによって結びつきます。</p>
-        <!-- <p><span class="glyphicon glyphicon-home"></span>高専祭実行委員メイン部署</p> -->
-      </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="./">
-          <img class="img-responsive" src="./img/thumbnail/pokedora.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">PokeDora</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2013　<span class="glyphicon glyphicon-user"></span> 1人</p>
-        <p>本来はUIの制作に使用されるSwingを元に簡単にゲームが作れるライブラリを制作しました。また，自作したライブラリを用いてポケモン風のゲームを作りデモを行いました。</p>
-      </div>
-    </div>
-    </div>
-
-    <div class="hackathon">
-    <h2>Hackathon</h2>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="../works/projectquest/">
-          <img class="img-responsive" src="./img/thumbnail/projectquest.png">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">ProjectQuest</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2017/09　<span class="glyphicon glyphicon-user"></span> 4人</p>
-        <p>エンジニア+デザイナをマッチングさせ，与えられたシステム開発のお題を一緒に取り組むことで，様々な人と出会いつつ技術を高めることができるWebサービス。</p>
-        <div class="tag">
-          <ul>
-            <li>レバレジーズ湯けむりハッカソン 優勝</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="https://github.com/meokz/WakeupVoice">
-          <img class="img-responsive" src="">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">WakeUpVoice</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2017/08　<span class="glyphicon glyphicon-user"></span> 4人</p>
-        <p>普通の目覚ましでは起きれない人向けの目覚ましアプリです。事前に設定したワードを自らが大きな声で発声し，音声認識により正しいと判断されなければアラームが解除されません。朝から元気に声を出すことで覚醒を促します。</p>
-      </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="../works/drofie/">
-          <img class="img-responsive" src="./img/thumbnail/drofie.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">drofie：シェアドローン自撮りサービス</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2016/09　<span class="glyphicon glyphicon-user"></span> 3人</p>
-        <p>観光地などに設置されたドローンで空中から自撮りを撮り，旅の思い出を作れるサービス。エンドユーザがアプリを起動すると自動でドローンが指定ポイントまで移動し，カメラの映像をストリーミングしてくれます。</p>
-        <div class="tag">
-          <ul>
-            <li>サイバーエージェントKyotoHack 特別賞</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row work">
-      <div class="col-xs-12 col-sm-4">
-        <a class="thumbnail" href="../works/arusen/">
-          <img class="img-responsive" src="./img/thumbnail/arusen.jpg">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-        <h3 class="work_title">あるせん</h3>
-        <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2015/11　<span class="glyphicon glyphicon-user"></span> 3人</p>
-        <p>高専でありがちな川柳をGoogle Chromeの上から投稿・閲覧・いいねできるChrome拡張機能です。</p>
-        <div class="tag">
-          <ul>
-            <li>チームラボオンラインハッカソン 優秀賞</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-    </div>
-<!--     <div class="Graphics">
-    <h2>Graphics</h2>
-    <div class="row">
-      <div class="col-xs-6 work_thumb_left">
-        <div class="work_thumb">
-          <h3 class="work_title">Artwork2015</h3>
-          <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2015</p>
-          <a class="thumbnail" href="./works/artworks2015/">
-            <img class="img-responsive" src="./img/thumbnail/artworks2015.jpg">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-xs-6 work_thumb_right">
-        <div class="work_thumb">
-          <h3 class="work_title">Artworks2014</h3>
-          <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2014</p>
-          <a class="thumbnail" href="./works/artworks2014/">
-            <img class="img-responsive" src="./img/thumbnail/artworks2014.jpg">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-6 work_thumb_left">
-        <div class="work_thumb">
-          <h3 class="work_title">Artwork2013</h3>
-          <p class="work_info"><span class="glyphicon glyphicon-time"></span> 2013</p>
-          <a class="thumbnail" href="./works/artworks2013/">
-            <img class="img-responsive" src="./img/thumbnail/artworks2013.jpg">
-          </a>
-        </div>
-      </div>
-    </div>
-    </div> -->
-    <!-- class="cg" -->
-
-  </div> <!-- class=container -->
   </section>
+
+<script>
+$(window).on("load",function(){
+  
+  $.getJSON("./profile/data/media.json", function(data, status) {
+
+    var media = $("#media");
+
+    $.each(data, function(i, parent) {
+      media.append($("<h3></h3>").html(i));
+      ol = $("<ol></ol>");
+
+      $.each(parent, function(i, item) {
+        var a = $("<a>" + item.title + ", " + item.url + ", " + item.media_name + ", " + item.date + "</a>");
+        a.attr('href', item.url);
+        a.attr('target', '_blank');
+
+        var li_a = $("<li></li>").append(a);
+        ol.append(li_a);
+      });
+
+      media.append(ol);
+    });
+  })
+});
+</script>
 
 </body>
 </html>

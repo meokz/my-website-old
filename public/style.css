@@ -1,97 +1,123 @@
+/* Override Bootstrap */
 @media (min-width:  768px) { .container { width: 750px; } }
 @media (min-width:  992px) { .container { width: 750px; } } 
 @media (min-width: 1200px) { .container { width: 750px; } }
 
-header.jumbotron {
-    background: url("../img/jumbotron.jpg");
-    background-position: center 60%;
-    background-size: cover;
-    margin-bottom: 1px;
-    color: #ffffff;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+a:link    { color: #000000; }
+a:visited { color: #000000; }
+a:hover   { color: #ff0000; }
+a:active  { color: #ff8000; }
+
+.container {
+    background: #FFFFFF;
 }
 
-header .container { margin: 10%; }
-
-.navbar { margin-bottom: 0; }
-
-/* section */
-section .container { background: #FFFFFF; }
-section .thumbnail { 
-    margin: 5px 0 5px;
-    border: none;
-}
-
-.section a:link    { color: #000000; }
-.section a:visited { color: #000000; }
-.section a:hover   { color: #ff0000; }
-.section a:active  { color: #ff8000; }
-
-ul { list-style:none; }
+/* My CSS */
 
 h2 {
-    padding: 0px 10px 10px 10px;
     font-size: 20px;
+    padding: 0px 10px 10px 10px;
     text-align: center;
     border-bottom: solid 1px #D2D2D2;
 }
+
+h3 { font-size: 18px; }
 
 p {
     font-size: 14px;
 }
 
+li {
+    font-size: 14px;
+}
+
+.small_p {
+    font-size: 12px;
+}
+
+ul { list-style:none; }
+
+.thumbnail { 
+    margin: 5px 0 5px;
+    border: none;
+}
+
+.link li{
+    margin: 20px 10px 20px 10px;
+    padding: 2px;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+
+li.mail     { background-image:url("./profile/img/mail.png"); }
+li.blog     { background-image:url("./profile/img/blog.png"); }
+li.twitter  { background-image:url("./profile/img/twitter.png"); }
+li.facebook { background-image:url("./profile/img/facebook.png"); }
+li.skype    { background-image:url("./profile/img/skype.png"); }
+li.github   { background-image:url("./profile/img/github.png"); }
+li.slideshare   { background-image:url("./profile/img/slideshare.png"); }
+
+.link li > a{
+    padding-left: 40px;
+}
+
+.pdf a {
+    color: #00A2FF;
+    margin: 5px;
+    padding:5px 10px 5px 10px;
+    border:1px solid #00A2FF;
+    border-radius:10px;
+}
+
 .work {
-    margin: 15px 5px 15px 5px;
+    margin: 10px 5px 10px 5px;
     padding: 5px;
     border: solid 1px #E0E0E0;
     cursor:pointer;
 }
-.work:hover{ border: solid 1px #51A7F9; }
 
-.work_title {
-    font-size: 18px;
-    margin: 5px 0px 10px 0px;
-    padding: 5px 0px 5px 0px;
+.work:hover{
+    border: solid 1px #51A7F9;
 }
 
-.work_info {
-    /*text-align:right;*/
-    color: #4A4A4A;
-    /*padding-left: 10px;*/
-    font-size: 14px;
+.work h3 { margin: 10px 0 10px 0; }
+
+.reink {
+    font-size: 19px;
 }
 
-.work_thumb {
-    margin: 10px 5px 10px 5px;
-    padding: 10px;
-    border: solid 1px #E0E0E0;
-    cursor:pointer;
-}
-.work_thumb:hover{ border: solid 1px #51A7F9; }
-
-.work_thumb_left {
-    padding-right: 5px;
+.organization-table {
+    padding: 0px 15px 0px 15px;
 }
 
-.work_thumb_right {
-    padding-left: 5px;
+.organization .url {
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    width: 24px;
+    height:24px;
 }
 
-.work_thumb h3 {
-    font-size: 20px;
-    margin: 5px 0px 10px 0px;
-    padding: 5px 0px 5px 0px;
-    border-bottom: solid 1px #E0E0E0;
+.achievement h3 {
+    padding-left: 15px;
 }
 
-@media (min-width:  0px) {
-    .work_thumb h3 { font-size: 16px; }
-    .title a { font-size: 12px; }
+.achievement li {
+    margin: 10px;
 }
 
-@media (min-width:  768px) {
-    .work_thumb h3 { font-size: 20px; }
-    .title a { font-size: 14px; }
+.achievement li > div > p {
+    margin: 0px;
+}
+
+.list {
+    /*padding-left: 5%;*/
+    margin-top: 5%;
+}
+
+.no-padding-left {
+    padding-left: 0px;
 }
 
 .tag ul {
@@ -99,12 +125,44 @@ p {
 }
 
 .tag li {
-    font-size: 10px;
+    font-size: 12px;
     display: inline-block;
-    padding: 5px 10px 5px 10px;
+    padding: 3px 10px 3px 10px;
+    margin: 1px;
     max-width:100%; /* limit width */
     word-break:break-all; /* wrap extended text*/
     color: #FFF;
     background-color: #3BBEFF;
     border-radius: 10px;
+}
+
+.tag-no-color li {
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px 10px 3px 10px;
+    margin: 1px;
+    max-width:100%; /* limit width */
+    word-break:break-all; /* wrap extended text*/
+   /* color: #FFF;
+    background-color: #3BBEFF;*/
+    border-radius: 10px;
+}
+
+.tag-blue {
+    color: #FFF;
+    background-color: #3BBEFF;
+}
+
+.tag-green {
+    color: #fff;
+    background-color: #47ed36;
+}
+
+.tag-yellow{
+    color: #323232;
+    background-color: #ffef3b;
+}
+
+.tag ul {
+    padding: 5px;
 }
