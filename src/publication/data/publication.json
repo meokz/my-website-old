@@ -1,4 +1,10 @@
 {
+    "Thesis - 卒業論文" : [
+		{
+			"title" : "霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討（指導教官・古賀崇了准教授）平成28年度 徳山高専情報電子工学科 卒業論文",
+			"url" : "../works/mistflow"
+		}
+	],
 	"International Conference Papers - 査読あり国際会議論文" : [
 		{
 			"title" : "<u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Air Mounted Eyepiece: Optical See-Through HMD Design with Aerial Optical Functions. In <em>Proceedings of the 9th Augmented Human International Conference</em> (AH ’18). ACM, New York, NY, USA, Article 1, 7 pages. DOI: https://doi.org/10.1145/3174910.3174911",
