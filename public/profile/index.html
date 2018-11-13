@@ -529,27 +529,12 @@
           </div>
         </li>
       </ol>
-
-      <div class="media">
-      <h2>Media</h2>
-      <h3>Radio</h3>
-      <ol>
-        <li><a href="https://twitter.com/cl842" target="_blank">クラスタ, https://twitter.com/cl842, FM84.2MHz ラヂオつくば, 2018.11.07 20:00-21:00</a></li>
-        <li><a href="https://twitter.com/cl842" target="_blank">クラスタ, https://twitter.com/cl842, FM84.2MHz ラヂオつくば, 2018.10.03 20:00-21:00</a></li>
-        <li><a href="http://park.gsj.mobi/voice/show/6129" target="_blank">FUTURES 落合陽一 RADIO PIXIE DUST, http://park.gsj.mobi/voice/show/6129, JFN「FUTURES」, 2018.4.23 5:30～6:00</a></li>
-      </ol>
-
-      <h3>Web Radio</h3>
-      <ol>
-        <li><a href="https://www.kure-rad.io/app/radios/41" target="_blank">#41 プロコンと高専祭実行委員の内積はほぼ0, https://www.kure-rad.io/app/radios/41, ちょっときいて呉高専, 2018.10.08</a></li>
-        <li><a href="https://youtu.be/Y33JWxePPTo" target="_blank">筑波大のミスター候補！？, https://youtu.be/Y33JWxePPTo, 勝手に高専ラジオ, 2018.9.27</a></li>
-        <li><a href="https://youtu.be/FX6AbaPJsWc" target="_blank">ふたりがたり#7 vs 大峠 和基, https://youtu.be/FX6AbaPJsWc, ふたりがたり, 2018.2.27</a></li>
-      </ol>
-
-      <h3>Web (Project)</h3>
-      <ol id="media-web-project">
-        
-      </ol>
+      
+      <div id="media">
+        <h2>Media</h2>
+      </div>
+      <!-- <h3>Web (Project)</h3> -->
+      <!-- <ol ></ol> -->
     </div>
     
     <div class="skill">
@@ -602,32 +587,31 @@
       </div>
   </section>
 
-    <script>
+<script>
+$(window).on("load",function(){
+  
+  $.getJSON("data/media.json", function(data, status) {
 
-    $(window).on("load",function(){
-      
-      // $.getJSON("data/profile.json", function(data, status) {
-      //   $("#profile_ja").text(data.profile_ja);
-      //   $("#profile_en").text(data.profile_en);
-      // })
+    var media = $("#media");
 
-      $.getJSON("data/media.json", function(data, status) {
+    $.each(data, function(i, parent) {
+      media.append($("<h3></h3>").html(i));
+      ol = $("<ol></ol>");
 
-        var ol = $("#media-web-project");
+      $.each(parent, function(i, item) {
+        var a = $("<a>" + item.title + ", " + item.url + ", " + item.media_name + ", " + item.date + "</a>");
+        a.attr('href', item.url);
+        a.attr('target', '_blank');
 
-        $.each(data, function(i, item) {
-          var a = $("<a>" + item.title + ", " + item.url + ", " + item.media_name + ", " + item.date + "</a>");
-          a.attr('href', item.url);
-          a.attr('target', '_blank');
+        var li_a = $("<li></li>").append(a);
+        ol.append(li_a);
+      });
 
-          var li_a = $("<li></li>").append(a);
-          ol.append(li_a);
-        });
-
-      })
-
-
+      media.append(ol);
     });
-  </script>
+  })
+});
+</script>
+
 </body>
 </html>
