@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<% var title = "ArtWorks | "; %>
+<% var dir ="../../"; %>
+<% var url ="works/artworks/"; %>
+<% var image_url ="works/artworks/img/abstract_2.jpg"; %>
+<% var description ="ArtWorks"; %>
+<% include ../../ejs/head %>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<% include ../../ejs/nav %>
+
+  <section class="section section-defalut">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>ArtWorks</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="work_caption">
+            <h3>Abstract 2</h3>
+            <p><span class="glyphicon glyphicon-wrench"></span> Modeling: Grasshopper (Rhinoceros), Rendering: Cycles (Blender)</p>
+            <p><span class="glyphicon glyphicon-time"></span> 2018/06/26</p>
+            <a class="thumbnail" href="./img/abstract_2.jpg">
+              <img src="./img/abstract_2.jpg" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="work_caption">
+            <h3>Abstract 1</h3>
+            <p><span class="glyphicon glyphicon-wrench"></span> Modeling: Grasshopper (Rhinoceros), Rendering: Cycles (Blender)</p>
+            <p><span class="glyphicon glyphicon-time"></span> 2018/06/25</p>
+            <a class="thumbnail" href="./img/abstract_1.jpg">
+              <img src="./img/abstract_1.jpg" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+</body>
+</html>
