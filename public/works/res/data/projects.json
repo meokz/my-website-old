@@ -11,11 +11,31 @@
 			]
 		},
 		{
+			"title" : "Make your own Retinal Projector",
+			"url" : "retinalprojector",
+			"people" : "8",
+			"date" : "2017/09 -",
+			"description" : "面対称結像光学系を使用した網膜投影。",
+			"tag" : [
+				"SIGGRAPH 2018"
+			]
+		},
+		{
+			"title" : "Light Field Blender",
+			"url" : "lightfieldblender",
+			"people" : "6",
+			"date" : "2017/05 - 2017/11",
+			"description" : "Light Field Blenderは拡張現実のための新しいヘッドマウントディスプレイです。小型・軽量化が可能であり，被写界深度を再現します。",
+			"tag" : [
+				"SIGGRAPH Asia 2017", "Ars Electronica 2017"
+			]
+		},
+		{
 			"title" : "Air Mounted Eyepiece",
 			"url" : "airmountedeyepiece",
 			"people" : "5",
 			"date" : "2017/05 - 2018/08",
-			"description" : "Air Mounted Displayは拡張現実のための新しいヘッドマウントディスプレイです。空中レンズによってVR用のHMDと同等の広視野角な映像を提供します。",
+			"description" : "面対称結像光学系を用いて空中に仮想レンズを生成し，VR用のHMDと同等の広視野角な拡張現実映像を眼前に提示します。",
 			"tag" : [
 				"SIGGRAPH 2018", "Augmented Human 2018"
 			]
@@ -28,16 +48,6 @@
 			"description" : "半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。",
 			"tag" : [
 				"Media Ambition Tokyo 2018", "SIGGRAPH Asia 2017"
-			]
-		},
-		{
-			"title" : "Light Field Blender",
-			"url" : "lightfieldblender",
-			"people" : "6",
-			"date" : "2017/05 - 2017/11",
-			"description" : "Light Field Blenderは拡張現実のための新しいヘッドマウントディスプレイです。小型・軽量化が可能であり，被写界深度を再現します。",
-			"tag" : [
-				"SIGGRAPH Asia 2017", "Ars Electronica 2017"
 			]
 		}
 	],
