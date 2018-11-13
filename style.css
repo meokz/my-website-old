@@ -35,6 +35,10 @@ h2 {
     border-bottom: solid 1px #D2D2D2;
 }
 
+p {
+    font-size: 14px;
+}
+
 .work {
     margin: 15px 5px 15px 5px;
     padding: 5px;
