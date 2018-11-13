@@ -66,21 +66,42 @@
 
   <section class="section section-defalut">
     <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4">
+
+      <div id="project">
+
+      </div>
+
+
+<!--       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="work">
-          <a class="work_img thumbnail" href="./../works/mistflow/">
-            <img class="img-responsive" src="./../img/thumbnail/fogdisplay.jpg">
+          <a class="work_img thumbnail" href="./../works/pianist/">
+            <img class="img-responsive" src="./../img/thumbnail/pianist.jpg">
           </a>
           <div class="work_caption">
-            <h2>Mistflow</h2>
-            <p><span class="glyphicon glyphicon-check"></span>Research</p>
-            <p><span class="glyphicon glyphicon-time"></span>2016/7 - 2017/3</p>
-            <p>　</p>
-            <p>　</p>
+            <h2>Pianist</h2>
+            <p><span class="glyphicon glyphicon-check"></span>Product by Mixed Reality </p>
+            <p><span class="glyphicon glyphicon-home"></span>NewMediaClub</p>
+            <p><span class="glyphicon glyphicon-user"></span>8人</p>
+            <p><span class="glyphicon glyphicon-time"></span>2014/11 - 2015/10</p>
           </div>
         </div>
-        <div class="work">
+      </div> -->
+
+<!--         <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="work">
+            <a class="work_img thumbnail" href="./../works/mistflow/">
+              <img class="img-responsive" src="./../img/thumbnail/fogdisplay.jpg">
+            </a>
+            <div class="work_caption">
+              <h2>Mistflow</h2>
+              <p><span class="glyphicon glyphicon-check"></span>Research</p>
+              <p><span class="glyphicon glyphicon-time"></span>2016/7 - 2017/3</p>
+              <p>　</p>
+              <p>　</p>
+            </div>
+          </div>
+        </div> -->
+<!--         <div class="work">
           <a class="work_img thumbnail" href="./../works/mealie/">
             <img class="img-responsive" src="./../img/thumbnail/mealie.jpg">
           </a>
@@ -92,8 +113,8 @@
             <p><span class="glyphicon glyphicon-time"></span>2015/11 - 2016/10</p>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="work">
           <a class="work_img thumbnail" href="./../works/drofie/">
             <img class="img-responsive" src="./../img/thumbnail/drofie.jpg">
@@ -162,8 +183,8 @@
             <p><span class="glyphicon glyphicon-time"></span>2013/12 - 2014/11</p>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      </div> -->
+<!--       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="work">
           <a class="work_img thumbnail" href="./../works/raziokun/">
             <img class="img-responsive" src="./../img/thumbnail/raziokun.jpg">
@@ -179,8 +200,59 @@
       </div>
     </div>
   </div>
-  </section>
+  </section> -->
+
+<script>
+$(window).on("load",function(){
+  
+  $.getJSON("data/projects.json", function(data, status) {
+
+    var project = $("#project");
+  
+
+    $.each(data, function(i, parent) {
+
+      var count = 0;
+      var row;
+      project.append($("<h2></h2>").html(i));
+      
+      $.each(parent, function(i, item) {
+        if (count % 2 == 0) {
+          row = $("<div></div>", {
+            'class': 'row'
+          });
+        }
+
+        var work = $('<div></div>', {
+          'class' : "col-xs-12 col-sm-6"
+        })
+        .html(
+          '<div class="work">' + 
+          '<a class="work_img thumbnail" href="' + item.url + '">' + 
+          '<img class="img-responsive" src="' + item.url + '/thumbnail.jpg' + '">' +
+          '</a>' + 
+          '<div class="work_caption">' + 
+          '<h3>' + item.title + '</h3>' + 
+          '<p><span class="glyphicon glyphicon-time"></span>' + item.date + '</p>' +
+          '<p><span class="glyphicon glyphicon-user"></span>' + item.people + '人</p>' + 
+          '<p><span class="glyphicon glyphicon-check"></span>' + item.description + '</p>' + 
+          '</div>' + 
+          '</div>');
+
+        row.append(work);
+        
+        count += 1;
+        if (count % 2 == 0) {
+          project.append(row);
+        }
+
+      });
+
+      project.append(row);
+    });
+  })
+});
+</script>
 
 </body>
-
 </html>
