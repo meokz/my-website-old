@@ -85,6 +85,14 @@
 			"tag" : []
 		},
 		{
+			"title" : "Re:ink：干渉可能なプロジェクションマッピング",
+			"url" : "reink",
+			"people" : "17",
+			"date" : "2014/12 - 2015/11",
+			"description" : "Re:inkは真っ白になった工場を学園祭の来場者の手によって蘇らせるインスタレーションです。Unityを用いて映像を生成・同期することで，再生するたびに異なるストーリーが展開します。",
+			"tag" : []
+		},
+		{
 			"title" : "Blackboard",
 			"url" : "blackboard",
 			"people" : "2",
