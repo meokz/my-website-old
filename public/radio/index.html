@@ -38,22 +38,30 @@ $(function(){
 
     var url = 'https://hooks.slack.com/services/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';
 
+    var name = $("#name").val()
+    var message = $("#message").val()
+
+    if (name == "") {
+      alert("名前を入力してください")
+      return;
+    }
+
+    if(message == "") {
+      alert("おたよりを入力してください");
+      return;
+    }
+
     var JSONdata = {
-        'text': $("#message").val(),
-        'username': 'otayori',  
+        'text': message,
+        'username': name,  
         'icon_emoji': ':yatta:',
         'link_names': 1
     };
-
-    // alert(JSON.stringify(JSONdata));
 
     $.ajax({
       type : 'POST',
       url : url,
       data : JSON.stringify(JSONdata),
-      // headers:{
-      //   'Content-Type':'application/json'
-      // }
     }).done(function (data) {
       console.log(data);
     }).fail(function (error) {
@@ -63,9 +71,6 @@ $(function(){
   });
 });
 </script>
-
-
-
 
 <body>
   <nav class="navbar navbar-default">
@@ -105,16 +110,22 @@ $(function(){
 
       <p>ラジオの情報を書く。ハッシュタグ。放送時間</p>
 
-      <div>
-        <label>おたよりを入力してね</label>
-        <input id="message">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <label>ラジオネーム</label>
+          <input id="name">
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <label>おたより内容</label>
+          <textarea id="message"></textarea>
+        </div>
       </div>
       <!-- <div>
         <label>Who do you want to say it to?</label>
         <input name="to" id="to" value="Mom">
       </div> -->
       <div>
-        <button id="btn_submit">Send my greetings</button>
+        <button id="btn_submit" class="btn btn-primary">送信</button>
       </div>
 
 
