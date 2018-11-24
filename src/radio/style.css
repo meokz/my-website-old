@@ -1,0 +1,56 @@
+/*@media (min-width:  768px) { .container { width: 750px; } }*/
+/*@media (min-width:  992px) { .container { width: 750px; } } */
+/*@media (min-width: 1200px) { .container { width: 750px; } }*/
+
+/* Override Bootstrap */
+header.jumbotron {
+    background: url("./img/jumbotron.jpg");
+    background-position: center 60%;
+    background-size: cover;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+header .container {
+	margin: 10%;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.reset {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+a:link    { color: #000000; }
+a:visited { color: #000000; }
+a:hover   { color: #ff0000; }
+a:active  { color: #ff8000; }
+
+.container {
+    background: #FFFFFF;
+}
+
+/* My CSS */
+
+h2 {
+    font-size: 20px;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    border-bottom: solid 1px #D2D2D2;
+}
+
+h3 { font-size: 18px; }
+
+p {
+    font-size: 14px;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+ul { list-style:none; }
