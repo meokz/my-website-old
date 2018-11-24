@@ -10,6 +10,51 @@
   <link href="style.css" rel="stylesheet">
 </head>
 
+<script>
+$(function(){
+  $("#btn_submit").click(function(){
+    
+    var url = 'https://hooks.slack.com/services/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';
+
+    var JSONdata = {
+        'text': $("#message").val(),
+        'username': 'otayori',  
+        'icon_emoji': ':yatta:',
+        'link_names': 1
+    };
+
+    // alert(JSON.stringify(JSONdata));
+
+    $.ajax({
+        type : 'post',
+        url : url,
+        data : JSON.stringify(JSONdata),
+        contentType: 'application/JSON',
+        dataType : 'JSON',
+        scriptCharset: 'utf-8',
+        success : function(data) {
+
+            // Success
+            alert("success");
+            alert(JSON.stringify(data));
+            $("#response").html(JSON.stringify(data));
+        },
+        error : function(data) {
+
+            // Error
+            alert("error");
+            alert(JSON.stringify(data));
+            $("#response").html(JSON.stringify(data));
+        }
+    });
+
+  });
+});
+</script>
+
+
+
+
 <body>
 <% include ./../ejs/nav %>
 
@@ -27,22 +72,20 @@
 
       <p>ラジオの情報を書く。ハッシュタグ。放送時間</p>
 
-<!-- 
-      https://hooks.slack.com/services/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
-      
-      <form action="http://foo.com" method="get">
       <div>
-        <label for="say">What greeting do you want to say?</label>
-        <input name="say" id="say" value="Hi">
+        <label>おたよりを入力してね</label>
+        <input id="message">
       </div>
-      <div>
-        <label for="to">Who do you want to say it to?</label>
+      <!-- <div>
+        <label>Who do you want to say it to?</label>
         <input name="to" id="to" value="Mom">
-      </div>
+      </div> -->
       <div>
-        <button>Send my greetings</button>
+        <button id="btn_submit">Send my greetings</button>
       </div>
-    </form> -->
+
+
+    </form>
 
       <h3>落合陽一先生との生配信</h3>
       <ol>
