@@ -13,7 +13,7 @@
 <script>
 $(function(){
   $("#btn_submit").click(function(){
-    
+
     var url = 'https://hooks.slack.com/services/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';
 
     var JSONdata = {
@@ -26,26 +26,16 @@ $(function(){
     // alert(JSON.stringify(JSONdata));
 
     $.ajax({
-        type : 'post',
-        url : url,
-        data : JSON.stringify(JSONdata),
-        contentType: 'application/JSON',
-        dataType : 'JSON',
-        scriptCharset: 'utf-8',
-        success : function(data) {
-
-            // Success
-            alert("success");
-            alert(JSON.stringify(data));
-            $("#response").html(JSON.stringify(data));
-        },
-        error : function(data) {
-
-            // Error
-            alert("error");
-            alert(JSON.stringify(data));
-            $("#response").html(JSON.stringify(data));
-        }
+      type : 'POST',
+      url : url,
+      data : JSON.stringify(JSONdata),
+      // headers:{
+      //   'Content-Type':'application/json'
+      // }
+    }).done(function (data) {
+      console.log(data);
+    }).fail(function (error) {
+      console.log(error);
     });
 
   });
