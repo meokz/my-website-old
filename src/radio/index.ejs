@@ -41,9 +41,10 @@ $(function(){
       url : url,
       data : JSON.stringify(JSONdata),
     }).done(function (data) {
-      console.log(data);
+      alert("おたよりの送信に成功しました！")
+      // console.log(data);
     }).fail(function (error) {
-      console.log(error);
+      alert("おたよりの送信に失敗しました")
     });
 
   });
@@ -63,110 +64,63 @@ $(function(){
 
   <section class="section section-defalut">
     <div class="container">
-      <h2>Radio</h2>
+      <h2>ラジたお</h2>
 
-      <p>ラジオの情報を書く。ハッシュタグ。放送時間</p>
+      <p>ラジたおでは，毎週火曜23:00よりパーソナリティの大峠和基がテクロジーやアートの話題についてゲストと好き勝手にお話します。</p>
+      <p>ハッシュタグは #ラジたお！下のお便りフォームからお便りもお待ちしています！</p>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <label>ラジオネーム</label>
-          <input id="name">
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <label>おたより内容</label>
-          <textarea id="message"></textarea>
+      <div style="border: solid 1px #D2D2D2; margin:5px; padding: 5px;">
+        <h3>お便り送信フォーム</h3>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <label>ラジオネーム</label>
+            <input id="name" value="匿名" >
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <label>おたより内容</label>
+            <textarea id="message"></textarea>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <button id="btn_submit" class="btn btn-primary">送信</button>
+          </div>
         </div>
       </div>
-      <!-- <div>
-        <label>Who do you want to say it to?</label>
-        <input name="to" id="to" value="Mom">
-      </div> -->
-      <div>
-        <button id="btn_submit" class="btn btn-primary">送信</button>
-      </div>
-
-
     </form>
 
-      <h3>落合陽一先生との生配信</h3>
-      <ol>
-        <li>
-          <a href="https://www.pscp.tv/TC_Mr4_2018/1MYGNqlgdNbKw" target="_blank">落合陽一 @ochyai #02</a>
-        </li>
-        <li>
-          <a href="https://www.pscp.tv/TC_Mr4_2018/1MYxNqVwpqbJw" target="_blank">落合陽一 @ochyai #01</a>
-        </li>
-      </ol>
+    <h3>ラジたお</h3>
+    <ol>
+      <li>
+        第1回の放送は11/27！
+      </li>
+    </ol>
 
-      <h3>つくコレコラボ配信</h3>
-      <ol>
-        <li>
-          <a href="https://www.pscp.tv/TC_Mr4_2018/1RDGlqeYDgkJL" target="_blank">ミス No.4 はせみん @TC_Miss4_2018 #03</a>
-        </li>
-        <li>
-          <a href="https://www.pscp.tv/TC_Mr4_2018/1kvJpamyMqQxE" target="_blank">ミスター No.1 小柴崚 @TC_Mr1_2018</a>
-        </li>
-        <li>
-          <a href="https://www.pscp.tv/TC_Mr4_2018/1kvJpaAvqYMxE" target="_blank">ミスター No.2 薄田興平(ダニエル) @TC_Mr2_2018</a>
-        </li>
-        <li>
-          <a href="https://www.pscp.tv/TC_Mr4_2018/1lDxLXyRgRPxm" target="_blank">ミス No.4 はせみん @TC_Miss4_2018 #01</a>
-        </li>
-      </ol>
+    <h2>過去の生配信</h2>
 
-<!--       <h3>Thesis - 卒業論文</h3>
-      <ul>
-        <li>
-          <a href="../works/mistflow">霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討（指導教官・古賀崇了准教授）平成28年度 徳山高専情報電子工学科 卒業論文</a>
-        </li>
-      </ul>
+    <h3>落合陽一先生との生配信</h3>
+    <ol>
+      <li>
+        <a href="https://www.pscp.tv/TC_Mr4_2018/1MYGNqlgdNbKw" target="_blank">落合陽一 @ochyai #02</a>
+      </li>
+      <li>
+        <a href="https://www.pscp.tv/TC_Mr4_2018/1MYxNqVwpqbJw" target="_blank">落合陽一 @ochyai #01</a>
+      </li>
+    </ol>
 
-      <h3>International Conference Papers - 査読あり国際会議論文</h3>
-      <ol>
-        <li>
-          <a href="../works/airmountedeyepiece"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Air Mounted Eyepiece: Optical See-Through HMD Design with Aerial Optical Functions. In <em>Proceedings of the 9th Augmented Human International Conference</em> (AH ’18). ACM, New York, NY, USA, Article 1, 7 pages. DOI: https://doi.org/10.1145/3174910.3174911</a>
-        </li>
-        <li>
-          <a href="../works/lightfieldblender"><u>Kazuki Otao</u>, Yuta Itoh, Hiroyuki Osone, Kazuki Takazawa, Shunnosuke Kataoka, and Yoichi Ochiai. 2017. Light field blender: designing optics and rendering methods for see-through and aerial near-eye display. In <em>SIGGRAPH Asia 2017 Technical Briefs</em> (SA '17). ACM, New York, NY, USA, Article 9, 4 pages. DOI: https://doi.org/10.1145/3145749.3149425</a>
-        </li>
-      </ol>
-
-      <h3>International Conference Posters - 査読あり国際会議ポスター発表</h3>
-      <ol>
-        <li>
-          <a href="../works/retinalprojector/">Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Posters</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3230744.3230810</a>
-        </li>
-        <li>
-          <a href="../works/mistflow/"><u>Kazuki Otao</u> and Takanori Koga. 2017. Mistflow: a fog display for visualization of adaptive shape-changing flow. In <em>SIGGRAPH Asia 2017 Posters</em> (SA '17). ACM, New York, NY, USA, Article 17, 2 pages. DOI: https://doi.org/10.1145/3145690.3145696</a>
-        </li>
-        <li>
-          <a href="../works/glassbeads">Shinnosuke Ando, <u>Kazuki Otao</u>, Kazuki Takazawa, Yusuke Tanemura, and Yoichi Ochiai. 2017. Aerial image on retroreflective particles. In <em>SIGGRAPH Asia 2017 Posters</em> (SA '17). ACM, New York, NY, USA, Article 7, 2 pages. DOI: https://doi.org/10.1145/3145690.3145730</a>
-        </li>
-      </ol>
-
-      <h3>International Conference Demos - 査読あり国際会議デモ発表</h3>
-      <ol>
-        <li>
-          <a href="../works/retinalprojector/">Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214910</a>
-        </li>
-        <li>
-          <a href="../works/airmountedeyepiece"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Transmissive Mirror Device based Near-Eye Displays with Wide Field of View. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214908</a>
-        </li>
-      </ol>
-
-      <h3>Domestic Conference - 国内会議</h3>
-      <ol>
-        <li>
-          <a href="../works/mistflow/"><u>大峠和基</u>, 古賀崇了. 2017. 霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討.インタラクション2017論文集. 情報処理学会, p.752-757.</a>
-        </li>
-      </ol>
-
-      <h3>e-Print</h3>
-      <ol>
-        <li>
-          <a href="../works/airmountedeyepiece">Yoichi Ochiai, <u>Kazuki Otao</u>, Hiroyuki Osone. 2017. Air Mounted Eyepiece: Design Methods for Aerial Optical Functions of Near-Eye and See-Through Display using Transmissive Mirror Device. In <em>ArXiv e-prints</em>. https://arxiv.org/abs/1710.03889</a>
-        </li>
-      </ol> -->
+    <h3>つくコレコラボ配信</h3>
+    <ol>
+      <li>
+        <a href="https://www.pscp.tv/TC_Mr4_2018/1RDGlqeYDgkJL" target="_blank">ミス No.4 はせみん @TC_Miss4_2018 #03</a>
+      </li>
+      <li>
+        <a href="https://www.pscp.tv/TC_Mr4_2018/1kvJpamyMqQxE" target="_blank">ミスター No.1 小柴崚 @TC_Mr1_2018</a>
+      </li>
+      <li>
+        <a href="https://www.pscp.tv/TC_Mr4_2018/1kvJpaAvqYMxE" target="_blank">ミスター No.2 薄田興平(ダニエル) @TC_Mr2_2018</a>
+      </li>
+      <li>
+        <a href="https://www.pscp.tv/TC_Mr4_2018/1lDxLXyRgRPxm" target="_blank">ミス No.4 はせみん @TC_Miss4_2018 #01</a>
+      </li>
+    </ol>
     </div>
   </section>
 
