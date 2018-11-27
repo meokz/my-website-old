@@ -1,16 +1,6 @@
 {
 	"Research" : [
 		{
-			"title" : "MistFlow",
-			"url" : "mistflow",
-			"people" : "2",
-			"date" : "2016/7 - 2017/11",
-			"description" : "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを研究開発しました。",
-			"tag" : [
-				"SIGGRAPH Asia 2017", "情報処理学会インタラクション2017"
-			]
-		},
-		{
 			"title" : "Make your own Retinal Projector",
 			"url" : "retinalprojector",
 			"people" : "8",
@@ -48,6 +38,16 @@
 			"description" : "半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。",
 			"tag" : [
 				"Media Ambition Tokyo 2018", "SIGGRAPH Asia 2017"
+			]
+		},
+		{
+			"title" : "MistFlow",
+			"url" : "mistflow",
+			"people" : "2",
+			"date" : "2016/7 - 2017/11",
+			"description" : "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを研究開発しました。",
+			"tag" : [
+				"SIGGRAPH Asia 2017", "情報処理学会インタラクション2017"
 			]
 		}
 	],
