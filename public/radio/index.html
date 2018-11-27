@@ -64,9 +64,9 @@ $(function(){
       data : JSON.stringify(JSONdata),
     }).done(function (data) {
       alert("おたよりの送信に成功しました！")
-      // console.log(data);
     }).fail(function (error) {
       alert("おたよりの送信に失敗しました")
+      console.log(data)
     });
 
   });
@@ -99,9 +99,6 @@ $(function(){
 
   <header class="jumbotron">
     <div class="container">
-      <!-- <h1>meo-cs.net</h1> -->
-      <!-- <p>Kazuki OTAO Portforlio.</p> -->
-      <!-- <p>　</p> -->
     </div>
   </header>
 
@@ -112,30 +109,36 @@ $(function(){
       <p>ラジたおでは，毎週火曜23:00よりパーソナリティの大峠和基がテクロジーやアートの話題についてゲストと好き勝手にお話します。</p>
       <p>ハッシュタグは #ラジたお！下のお便りフォームからお便りもお待ちしています！</p>
 
-      <div style="border: solid 1px #D2D2D2; margin:5px; padding: 5px;">
-        <h3>お便り送信フォーム</h3>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
+      <h3>お便り送信フォーム</h3>
+
+      <form>
+        <ul class="otayori">
+          <li>
             <label>ラジオネーム</label>
-            <input id="name" value="匿名" >
-          </div>
-          <div class="col-xs-12 col-sm-4">
+            <input type="text"　id="name" value="匿名" >
+          </li>
+          <li>
             <label>おたより内容</label>
-            <textarea id="message"></textarea>
-          </div>
-          <div class="col-xs-12 col-sm-4">
+            <textarea id="message" rows="5"></textarea>
+          </li>
+          <li>
             <button id="btn_submit" class="btn btn-primary">送信</button>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </form>
     </form>
 
     <h3>ラジたお</h3>
-    <ol>
+    <ul>
       <li>
-        第1回の放送は11/27！
+        第2回の放送は12/4！
       </li>
-    </ol>
+      <li>
+        <a href="https://www.pscp.tv/TC_Mr4_2018/1lDxLMbVqpLKm" target="_blank">
+          ラジたお #01 (ゲスト: デジタルネイチャー研究室 伊藤優太), 2018.11.28
+        </a>
+      </li>
+    </ul>
 
     <h2>過去の生配信</h2>
 
