@@ -53,4 +53,36 @@ li {
     margin-bottom: 10px;
 }
 
-ul { list-style:none; }
+form {
+    border: solid 1px #D2D2D2;
+    margin:5px;
+    padding: 5px;
+}
+
+ul.otayori {
+    padding: 5px;
+    margin: 5px;
+}
+
+ul.otayori li {
+    list-style: none;
+}
+
+ul.otayori label {
+    width:100px;
+    float: left;
+}
+
+ul.otayori input {
+    width:100%;
+}
+
+ul.otayori textarea {
+    width:100%;
+}
+
+
+#btn_submit {
+    display: block;
+    margin: 0 auto;
+}
