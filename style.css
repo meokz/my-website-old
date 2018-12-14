@@ -15,23 +15,19 @@ a:active  { color: #ff8000; }
 /* My CSS */
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px 10px 10px 10px;
     text-align: center;
     border-bottom: solid 1px #D2D2D2;
 }
 
-h3 { font-size: 18px; }
+h3 { font-size: 16px; }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 li {
-    font-size: 14px;
-}
-
-.small_p {
     font-size: 12px;
 }
 
@@ -49,7 +45,6 @@ ul { list-style:none; }
     background-repeat:no-repeat;
 }
 
-
 li.mail     { background-image:url("./profile/img/mail.png"); }
 li.blog     { background-image:url("./profile/img/blog.png"); }
 li.twitter  { background-image:url("./profile/img/twitter.png"); }
@@ -60,14 +55,6 @@ li.slideshare   { background-image:url("./profile/img/slideshare.png"); }
 
 .link li > a{
     padding-left: 40px;
-}
-
-.pdf a {
-    color: #00A2FF;
-    margin: 5px;
-    padding:5px 10px 5px 10px;
-    border:1px solid #00A2FF;
-    border-radius:10px;
 }
 
 .work {
@@ -83,32 +70,8 @@ li.slideshare   { background-image:url("./profile/img/slideshare.png"); }
 
 .work h3 { margin: 10px 0 10px 0; }
 
-.reink {
-    font-size: 19px;
-}
-
 .organization-table {
     padding: 0px 15px 0px 15px;
-}
-
-.organization .url {
-    padding: 5px;
-    margin-left: 5px;
-    margin-bottom: 2px;
-    width: 24px;
-    height:24px;
-}
-
-.achievement h3 {
-    padding-left: 15px;
-}
-
-.achievement li {
-    margin: 10px;
-}
-
-.achievement li > div > p {
-    margin: 0px;
 }
 
 .list {
@@ -125,7 +88,7 @@ li.slideshare   { background-image:url("./profile/img/slideshare.png"); }
 }
 
 .tag li {
-    font-size: 12px;
+    font-size: 10px;
     display: inline-block;
     padding: 3px 10px 3px 10px;
     margin: 1px;
@@ -137,7 +100,7 @@ li.slideshare   { background-image:url("./profile/img/slideshare.png"); }
 }
 
 .tag-no-color li {
-    font-size: 12px;
+    font-size: 10px;
     display: inline-block;
     padding: 3px 10px 3px 10px;
     margin: 1px;
