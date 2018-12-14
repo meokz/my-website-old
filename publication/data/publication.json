@@ -22,12 +22,6 @@
 			"url" : "../works/lightfieldblender"
 		}
 	],
-	"International Conference Invited Talk - 国際会議招待講演" : [
-		{
-			"title": "Takanori Koga and <u>Kazuki Otao</u>. 2018. An Interactive Fog Display to Express Adaptive Shape-Changing Flow. In <em>the 25th International Display Workshops</em> (IDW '18).",
-			"url": "../works/mistflow"
-		}
-	],
 	"International Conference Posters - 査読あり国際会議ポスター発表" : [
 		{
 			"title" : "Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Posters</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3230744.3230810",
@@ -50,6 +44,12 @@
 		{
 			"title" : "<u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Transmissive Mirror Device based Near-Eye Displays with Wide Field of View. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214908",
 			"url" : "../works/airmountedeyepiece"
+		}
+	],
+	"International Conference Invited Talk - 国際会議招待講演": [
+		{
+			"title": "Takanori Koga and <u>Kazuki Otao</u>. 2018. An Interactive Fog Display to Express Adaptive Shape-Changing Flow. In <em>the 25th International Display Workshops</em> (IDW '18).",
+			"url": "../works/mistflow"
 		}
 	],
 	"Domestic Conference - 国内会議" : [
