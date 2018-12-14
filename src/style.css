@@ -29,6 +29,7 @@ p {
 
 li {
     font-size: 12px;
+    margin: 5px;
 }
 
 ul { list-style:none; }
