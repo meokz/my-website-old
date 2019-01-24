@@ -64,6 +64,10 @@ li.slideshare   { background-image:url("./profile/img/slideshare.png"); }
     border: solid 1px #51A7F9;
 }
 
+.work a:hover {
+    color: #000000;
+}
+
 .work h3 { margin: 10px 0 10px 0; }
 
 .organization-table {
