@@ -15,11 +15,15 @@
 	"International Conference Papers - 査読あり国際会議論文" : [
 		{
 			"title" : "<u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Air Mounted Eyepiece: Optical See-Through HMD Design with Aerial Optical Functions. In <em>Proceedings of the 9th Augmented Human International Conference</em> (AH ’18). ACM, New York, NY, USA, Article 1, 7 pages. DOI: https://doi.org/10.1145/3174910.3174911",
-			"url" : "../works/airmountedeyepiece"
+			"url" : "../works/airmountedeyepiece",
+			"acceptance_rate" : "34.5 % (27 out of 60)",
+			"submission": "27/58",
+			"meta": "http://siggraphasia.strikingly.com/technical-briefs"
 		},
 		{
 			"title" : "<u>Kazuki Otao</u>, Yuta Itoh, Hiroyuki Osone, Kazuki Takazawa, Shunnosuke Kataoka, and Yoichi Ochiai. 2017. Light field blender: designing optics and rendering methods for see-through and aerial near-eye display. In <em>SIGGRAPH Asia 2017 Technical Briefs</em> (SA '17). ACM, New York, NY, USA, Article 9, 4 pages. DOI: https://doi.org/10.1145/3145749.3149425",
-			"url" : "../works/lightfieldblender"
+			"url" : "../works/lightfieldblender",
+			"acceptance_rate": "45.0 % (20 out of 58)"
 		}
 	],
 	"International Conference Posters - 査読あり国際会議ポスター発表" : [

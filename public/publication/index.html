@@ -86,6 +86,15 @@ $(window).on("load",function(){
           '<a href="' + item.url + '" target="' + target + '"">' + item.title + '</a>' +
           '</li>');
         ol.append(li);
+
+
+        var acceptance_rate = item.acceptance_rate;
+        if (acceptance_rate == undefined) {
+          // acceptance_rate = ""
+        } else {
+          p = $('<p>Acceptance rate: ' + acceptance_rate + '</p>');
+          ol.append(p);
+        }
       });
 
       publication.append(ol);
